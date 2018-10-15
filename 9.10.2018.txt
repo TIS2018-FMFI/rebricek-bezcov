@@ -1,18 +1,18 @@
 9.10.2018(utorok) 11:20-13:00
-všetci èlenovia (4)
+vÅ¡etci Älenovia (4)
 
 Agenda:
-prideli roly k èlenom tímu
+prideliÅ¥ roly k Älenom tÃ­mu
 1.bod - koncept
-diskusia o informáciách získanıch poèas stretnutia so zadávate¾om
-kadı èlen tımu predstaví svoju myšlienku o predstave vısledného produktu
-diskusiou získa jednotnú predstavu o vıslednom produkte
-2.bod - špecifikácia poiadaviek
-oboznámi sa so štandardom IEEE/ANSI 830-1993 (štruktúra katalógu poiadaviek)  
+diskusia o informÃ¡ciÃ¡ch zÃ­skanÃ½ch poÄas stretnutia so zadÃ¡vateÄ¾om
+kaÅ¾dÃ½ Älen tÃ½mu predstavÃ­ svoju myÅ¡lienku o predstave vÃ½slednÃ©ho produktu
+diskusiou zÃ­skaÅ¥ jednotnÃº predstavu o vÃ½slednom produkte
+2.bod - Å¡pecifikÃ¡cia poÅ¾iadaviek
+oboznÃ¡miÅ¥ sa so Å¡tandardom IEEE/ANSI 830-1993 (Å¡truktÃºra katalÃ³gu poÅ¾iadaviek)  
 
-záver:
-boli pridelené úlohy k èlenom tímu
-1. bod - kompletnı
-2. nod - kompletnı
+zÃ¡ver:
+boli pridelenÃ© Ãºlohy k Älenom tÃ­mu
+1. bod - kompletnÃ½
+2. bod - kompletnÃ½
 
-rozdelenie zodpovedností za èasti špecifikácie do najblišieho stretnutia
+rozdelenie zodpovednostÃ­ za Äasti Å¡pecifikÃ¡cie do najbliÅ¾Å¡ieho stretnutia
