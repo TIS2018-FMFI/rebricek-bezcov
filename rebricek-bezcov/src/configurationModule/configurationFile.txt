@@ -1,0 +1,6 @@
+2018 //rok sezony
+10 //max pocet bodovanych kol pretekara
+3 //sposob bodovania
+50,45,40,35,30,29,28,27,26,25,24,23,22,21,20,1 //zoznam na bodovanie podla sposobu c.1
+50 //konstanta na bodovanie podla sposobu c.3
+* Konfiguracny subor treba drzat v uvedenom formate. Data kazdeho riadku musia koncit znakom "//"
