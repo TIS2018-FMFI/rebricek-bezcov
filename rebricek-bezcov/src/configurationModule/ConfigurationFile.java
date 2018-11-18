@@ -10,9 +10,9 @@ public class ConfigurationFile {
 	private int seasonYear, rankedRounds, pointingType, constant;
 	private int[] pointingList;
 	
-	public ConfigurationFile(File configFile) {
+	public ConfigurationFile(String configFile) {
 		try {
-			Scanner scanner = new Scanner(configFile);
+			Scanner scanner = new Scanner(new File(configFile));
 			seasonYear = takeIntegerInLine(scanner.nextLine());
 			rankedRounds = takeIntegerInLine(scanner.nextLine());
 			pointingType = takeIntegerInLine(scanner.nextLine());
