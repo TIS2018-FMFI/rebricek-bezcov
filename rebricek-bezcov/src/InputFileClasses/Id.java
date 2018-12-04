@@ -10,9 +10,10 @@ package InputFileClasses;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlValue;
 
 
 /**
@@ -22,14 +23,11 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * <pre>
  * &lt;complexType&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element ref="{http://www.orienteering.org/datastandard/3.0}Person"/&gt;
- *         &lt;element ref="{http://www.orienteering.org/datastandard/3.0}Result"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;string"&gt;
+ *       &lt;attribute name="type" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
  * &lt;/complexType&gt;
  * </pre>
  * 
@@ -37,63 +35,62 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "person",
-    "result"
+    "value"
 })
-@XmlRootElement(name = "PersonResult")
-public class PersonResult {
+@XmlRootElement(name = "Id")
+public class Id {
 
-    @XmlElement(name = "Person", required = true)
-    protected Person person;
-    @XmlElement(name = "Result", required = true)
-    protected Result result;
+    @XmlValue
+    protected String value;
+    @XmlAttribute(name = "type")
+    protected String type;
 
     /**
-     * Gets the value of the person property.
+     * Gets the value of the value property.
      * 
      * @return
      *     possible object is
-     *     {@link Person }
+     *     {@link String }
      *     
      */
-    public Person getPerson() {
-        return person;
+    public String getValue() {
+        return value;
     }
 
     /**
-     * Sets the value of the person property.
+     * Sets the value of the value property.
      * 
      * @param value
      *     allowed object is
-     *     {@link Person }
+     *     {@link String }
      *     
      */
-    public void setPerson(Person value) {
-        this.person = value;
+    public void setValue(String value) {
+        this.value = value;
     }
 
     /**
-     * Gets the value of the result property.
+     * Gets the value of the type property.
      * 
      * @return
      *     possible object is
-     *     {@link Result }
+     *     {@link String }
      *     
      */
-    public Result getResult() {
-        return result;
+    public String getType() {
+        return type;
     }
 
     /**
-     * Sets the value of the result property.
+     * Sets the value of the type property.
      * 
      * @param value
      *     allowed object is
-     *     {@link Result }
+     *     {@link String }
      *     
      */
-    public void setResult(Result value) {
-        this.result = value;
+    public void setType(String value) {
+        this.type = value;
     }
 
 }

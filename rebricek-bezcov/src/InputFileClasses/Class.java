@@ -27,8 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element ref="{http://www.orienteering.org/datastandard/3.0}Id"/&gt;
  *         &lt;element ref="{http://www.orienteering.org/datastandard/3.0}Name"/&gt;
- *         &lt;element ref="{http://www.orienteering.org/datastandard/3.0}StartTime"/&gt;
- *         &lt;element ref="{http://www.orienteering.org/datastandard/3.0}Rank"/&gt;
+ *         &lt;element ref="{http://www.orienteering.org/datastandard/3.0}stringName"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -41,20 +40,17 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "id",
     "name",
-    "startTime",
-    "rank"
+    "stringName"
 })
-@XmlRootElement(name = "Event")
-public class Event {
+@XmlRootElement(name = "Class")
+public class Class {
 
     @XmlElement(name = "Id", required = true)
     protected Id id;
     @XmlElement(name = "Name", required = true)
     protected Name name;
-    @XmlElement(name = "StartTime", required = true)
-    protected StartTime startTime;
-    @XmlElement(name = "Rank", required = true)
-    protected String rank;
+    @XmlElement(required = true)
+    protected String stringName;
 
     /**
      * Gets the value of the id property.
@@ -105,51 +101,27 @@ public class Event {
     }
 
     /**
-     * Gets the value of the startTime property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StartTime }
-     *     
-     */
-    public StartTime getStartTime() {
-        return startTime;
-    }
-
-    /**
-     * Sets the value of the startTime property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StartTime }
-     *     
-     */
-    public void setStartTime(StartTime value) {
-        this.startTime = value;
-    }
-
-    /**
-     * Gets the value of the rank property.
+     * Gets the value of the stringName property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getRank() {
-        return rank;
+    public String getStringName() {
+        return stringName;
     }
 
     /**
-     * Sets the value of the rank property.
+     * Sets the value of the stringName property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setRank(String value) {
-        this.rank = value;
+    public void setStringName(String value) {
+        this.stringName = value;
     }
 
 }
