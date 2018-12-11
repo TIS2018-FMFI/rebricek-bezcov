@@ -7,7 +7,7 @@ import InputFileClasses.ResultList;
  */
 public class InputFileVerificator {
 
-    public ResultList verify(ResultList resultList){
+    public static ResultList verifyInputFile(ResultList resultList){
         // skontroluje ...
         return resultList;
     }
