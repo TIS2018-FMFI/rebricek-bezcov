@@ -16,18 +16,20 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class InputFileHandler {
 
+    public static void addInputFile(String fileAddress){
+        ResultList inputResultList = InputFileHandler.unmarshalInputFile(fileAddress);
 
-    public static boolean addInputFile(String fileAddress){
-        ResultList resultList = InputFileHandler.unmarshalInputFile(fileAddress);
+        // daj skontrolovat InputFileVerificator-u
+        ResultList resultList = InputFileVerificator.verifyInputFile(inputResultList);
 
-        // daj skontrolovat InputFIleVerificator-u
-
-        // Configuration config = ConfigurationModule.getConfiguration();
-        // String season = config.getSeason()
-
+        //Configuration config = ConfigurationModule.getConfiguration();
+        //String season = config.getSeason()
         String season = "2018";         // placeholder, dummy value
+
+        // get FileStorage
         String fileStorage = "Data";   // placeholder, dummy value
 
         String newFileName = "kolo"+resultList.getEvent().getRank() + ".xml";
@@ -37,31 +39,41 @@ public class InputFileHandler {
         boolean success = InputFileHandler.marshalInputFile(resultList, savePath);
 
         // if (success == false) -> message?
+        // InteractionModule.printMessage(MESSAGE_MARSHALLING_FAILED)
+        // nastala chyba pri ukladaní vstupného súboru
 
-        // spusti dalsi MODUL
 
-        return success;
+        // spusti dalsi MODUL -> nacitaj vsetky vstupne subory
+
+        loadInputFiles();
     }
 
 
-    public static List<ResultList> loadInputFiles(){
+    public static void loadInputFiles(){
         // Configuration config = ConfigurationModule.getConfiguration();
         // get fileStorage, season
         // get all files in [fileStorage]/[season]/
 
-        List<String> folderContent = List.of("a","b","...");  // by OS
-        List<ResultList> loaded = new ArrayList<>();
+        String season = "2018";      // placeholder, dummy value
+        String fileStorage = "Data"; // placeholder, dummy value
 
-        for (String fileAddress : folderContent){
+        //listFilesForFolder(folder);
+
+//        List<String> folderContent = List.of("a","b","...");  // by OS
+//        List<ResultList> loaded = new ArrayList<>();
+
+        List<String> inputFilePaths = listFilesForFolder(fileStorage+"/"+season);
+        List<ResultList> loadedResultLists = new ArrayList<>();
+
+        for (String fileAddress : inputFilePaths){
             ResultList resultList = InputFileHandler.unmarshalInputFile(fileAddress);
             ResultList verifiedResultList = InputFileVerificator.verifyInputFile(resultList);
-            loaded.add(verifiedResultList);
+            loadedResultLists.add(verifiedResultList);
         }
-
 
         // spusti dalsi MODUL
 
-        return loaded;
+        // RoundPointComputation.compute(loadedResultLists) // new(?)
     }
 
 
@@ -96,4 +108,21 @@ public class InputFileHandler {
         }
         return success;
     }
+
+
+    private static List<String> listFilesForFolder(final String folderAddress) {
+        final File folder = new File(folderAddress);
+        List<String> filePaths = new ArrayList<>();
+        for (final File fileEntry : folder.listFiles()) {
+            if (fileEntry.isFile()) {
+                if (fileEntry.getName().endsWith(".xml")){
+                    System.out.println(fileEntry.getName());
+                    filePaths.add(fileEntry.getPath());
+                }
+            }
+        }
+        return filePaths;
+    }
+
+
 }
