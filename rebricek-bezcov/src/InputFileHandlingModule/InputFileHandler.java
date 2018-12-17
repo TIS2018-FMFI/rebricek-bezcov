@@ -19,6 +19,9 @@ import java.util.List;
 
 public class InputFileHandler {
 
+
+    private final static String FILESTORAGE = "C:\\Users\\TomasT\\OneDrive\\3. rocnik\\3-Zima\\TIS Tvorba Informačných systémov\\PROJEKT\\DATA_TEST";
+
     public static void addInputFile(String fileAddress){
         ResultList inputResultList = InputFileHandler.unmarshalInputFile(fileAddress);
 
@@ -30,11 +33,17 @@ public class InputFileHandler {
         String season = "2018";         // placeholder, dummy value
 
         // get FileStorage
-        String fileStorage = "Data";   // placeholder, dummy value
+        //String fileStorage = "Data";   // placeholder, dummy value
 
         String newFileName = "kolo"+resultList.getEvent().getRank() + ".xml";
 
-        String savePath = fileStorage + '/'+season + '/' + newFileName;
+        String savePath = FILESTORAGE + '/'+season + '/' + newFileName;
+
+        File saveFolder = new File(FILESTORAGE + '/'+season);
+        if (saveFolder.isDirectory() == false) {
+            new File(FILESTORAGE + '/'+season).mkdirs();
+            System.out.println("created directory: "+season);
+        }
 
         boolean success = InputFileHandler.marshalInputFile(resultList, savePath);
 
@@ -55,14 +64,14 @@ public class InputFileHandler {
         // get all files in [fileStorage]/[season]/
 
         String season = "2018";      // placeholder, dummy value
-        String fileStorage = "Data"; // placeholder, dummy value
+        //String fileStorage = "Data"; // placeholder, dummy value
 
         //listFilesForFolder(folder);
 
 //        List<String> folderContent = List.of("a","b","...");  // by OS
 //        List<ResultList> loaded = new ArrayList<>();
 
-        List<String> inputFilePaths = listFilesForFolder(fileStorage+"/"+season);
+        List<String> inputFilePaths = listFilesForFolder(FILESTORAGE+"/"+season);
         List<ResultList> loadedResultLists = new ArrayList<>();
 
         for (String fileAddress : inputFilePaths){
@@ -109,9 +118,13 @@ public class InputFileHandler {
         return success;
     }
 
-
+    // FILESTORAGE + season + filename + extension
     private static List<String> listFilesForFolder(final String folderAddress) {
         final File folder = new File(folderAddress);
+        //System.out.println(folder.isDirectory());
+        if (folder.isDirectory()){
+            return new ArrayList<>();
+        }
         List<String> filePaths = new ArrayList<>();
         for (final File fileEntry : folder.listFiles()) {
             if (fileEntry.isFile()) {
