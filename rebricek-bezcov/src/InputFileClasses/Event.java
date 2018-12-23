@@ -50,7 +50,7 @@ public class Event {
     @XmlElement(name = "Id", required = true)
     protected Id id;
     @XmlElement(name = "Name", required = true)
-    protected Name name;
+    protected String name;
     @XmlElement(name = "StartTime", required = true)
     protected StartTime startTime;
     @XmlElement(name = "Rank", required = true)
@@ -88,7 +88,7 @@ public class Event {
      *     {@link Name }
      *     
      */
-    public Name getName() {
+    public String getName() {
         return name;
     }
 
@@ -100,7 +100,7 @@ public class Event {
      *     {@link Name }
      *     
      */
-    public void setName(Name value) {
+    public void setName(String value) {
         this.name = value;
     }
 

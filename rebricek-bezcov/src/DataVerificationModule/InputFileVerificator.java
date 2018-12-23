@@ -14,6 +14,10 @@ public class InputFileVerificator {
 
     public static ResultList verifyInputFile(ResultList resultList){
         // skontroluje ...
+        if (resultList.getEvent() == null){
+            resultList.setEvent(new Event());
+        }
+
         Event event = resultList.getEvent();
 
         if (event.getRank() == null){

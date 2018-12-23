@@ -4,55 +4,73 @@ package InputFileHandlingModule;
  */
 
 
-
 import DataVerificationModule.InputFileVerificator;
 import InputFileClasses.ResultList;
+import InteractionModule.InteractionModule;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class InputFileHandler {
 
+    private final static String FILESTORAGE = "DATA_STORAGE";
 
-    private final static String FILESTORAGE = "C:\\Users\\TomasT\\OneDrive\\3. rocnik\\3-Zima\\TIS Tvorba Informačných systémov\\PROJEKT\\DATA_TEST";
 
     public static void addInputFile(String fileAddress){
-        ResultList inputResultList = InputFileHandler.unmarshalInputFile(fileAddress);
+        ResultList inputResultList = null;
+        try {
+            inputResultList = InputFileHandler.unmarshalInputFile(fileAddress);
+        } catch (JAXBException e) {
+            InteractionModule.printMessage("An Error has occurred while reading file: " + fileAddress);
+            //e.printStackTrace();
+            return;
+        }
 
         // daj skontrolovat InputFileVerificator-u
         ResultList resultList = InputFileVerificator.verifyInputFile(inputResultList);
 
-        //Configuration config = ConfigurationModule.getConfiguration();
-        //String season = config.getSeason()
+        //Configuration config = ConfigurationModule.getConfiguration(); // TODO
+        //String season = config.getSeason()    // TODO
+
         String season = "2018";         // placeholder, dummy value
 
-        // get FileStorage
-        //String fileStorage = "Data";   // placeholder, dummy value
+        // get FileStorage // TODO
 
         String newFileName = "kolo"+resultList.getEvent().getRank() + ".xml";
 
-        String savePath = FILESTORAGE + '/'+season + '/' + newFileName;
+        String savePath = FILESTORAGE + '\\'+season + '\\' + newFileName;
 
-        File saveFolder = new File(FILESTORAGE + '/'+season);
-        if (saveFolder.isDirectory() == false) {
-            new File(FILESTORAGE + '/'+season).mkdirs();
-            System.out.println("created directory: "+season);
+        File fileStorageFolder = new File(FILESTORAGE);
+        if (fileStorageFolder.isDirectory() == false) {
+            new File(FILESTORAGE).mkdirs();
+            System.out.println("created directory: "+fileStorageFolder.getPath());
+            //System.out.println("created directory: "+FILESTORAGE);
         }
 
-        boolean success = InputFileHandler.marshalInputFile(resultList, savePath);
+        File seasonFolder = new File(FILESTORAGE + '/'+season);
+        if (seasonFolder.isDirectory() == false) {
+            new File(FILESTORAGE + '\\'+season).mkdirs();
+            System.out.println("created directory: "+FILESTORAGE + '\\'+season);
+        }
 
-        // if (success == false) -> message?
+        try {
+            InputFileHandler.marshalInputFile(resultList, savePath);
+            System.out.println("created directory: "+savePath);
+        } catch (JAXBException e) {
+            InteractionModule.printMessage("An Error has occurred while creating file: " + savePath);
+            //e.printStackTrace();
+            return;
+        }
+        //if (success == false)
         // InteractionModule.printMessage(MESSAGE_MARSHALLING_FAILED)
         // nastala chyba pri ukladaní vstupného súboru
-
-
-        // spusti dalsi MODUL -> nacitaj vsetky vstupne subory
 
         loadInputFiles();
     }
@@ -61,71 +79,75 @@ public class InputFileHandler {
     public static void loadInputFiles(){
         // Configuration config = ConfigurationModule.getConfiguration();
         // get fileStorage, season
-        // get all files in [fileStorage]/[season]/
 
         String season = "2018";      // placeholder, dummy value
-        //String fileStorage = "Data"; // placeholder, dummy value
 
-        //listFilesForFolder(folder);
-
-//        List<String> folderContent = List.of("a","b","...");  // by OS
-//        List<ResultList> loaded = new ArrayList<>();
-
-        List<String> inputFilePaths = listFilesForFolder(FILESTORAGE+"/"+season);
+        List<String> inputFilePaths = null;
+        try {
+            inputFilePaths = listFilesForFolder(FILESTORAGE+"\\"+season);
+        } catch (FileNotFoundException e) {
+            //e.printStackTrace();
+            return;
+        }
         List<ResultList> loadedResultLists = new ArrayList<>();
 
         for (String fileAddress : inputFilePaths){
-            ResultList resultList = InputFileHandler.unmarshalInputFile(fileAddress);
-            ResultList verifiedResultList = InputFileVerificator.verifyInputFile(resultList);
-            loadedResultLists.add(verifiedResultList);
+            ResultList resultList = null;
+            try {
+                resultList = InputFileHandler.unmarshalInputFile(fileAddress);
+                ResultList verifiedResultList = InputFileVerificator.verifyInputFile(resultList);
+                loadedResultLists.add(verifiedResultList);
+            } catch (JAXBException e) {
+                InteractionModule.printMessage("An Error has occurred while reading file: " + fileAddress);
+                //e.printStackTrace();
+                return;
+            }
         }
 
         // spusti dalsi MODUL
 
-        // RoundPointComputation.compute(loadedResultLists) // new(?)
+        //new RoundPointComputation().compute(loadedResultLists); // new(?)
+        System.out.println("ResultLists loaded:");
+        for (ResultList rl : loadedResultLists){
+            System.out.println("rank: "+rl.getEvent().getRank());
+        }
+        System.out.println("-------------------");
     }
 
 
-    private static ResultList unmarshalInputFile(String sourceFileAddress){
-
+    private static ResultList unmarshalInputFile(String sourceFileAddress) throws JAXBException {
         ResultList resultList = null;
-        try {
-            JAXBContext jc = JAXBContext.newInstance(ResultList.class);
 
-            File sourceFile = new File(sourceFileAddress);
-            Unmarshaller unmarshaller = jc.createUnmarshaller();
-            resultList = (ResultList) unmarshaller.unmarshal(sourceFile);
-        } catch (JAXBException e) {
-            e.printStackTrace();
-        }
+        JAXBContext jc = JAXBContext.newInstance(ResultList.class);
+
+        File sourceFile = new File(sourceFileAddress);
+        Unmarshaller unmarshaller = jc.createUnmarshaller();
+        resultList = (ResultList) unmarshaller.unmarshal(sourceFile);
+
         return resultList;
     }
 
-    private static boolean marshalInputFile(ResultList resultList, String targetFileAdress){
-        boolean success = false;
-        try {
-            JAXBContext jc = JAXBContext.newInstance(ResultList.class);
+    private static void marshalInputFile(ResultList resultList, String targetFileAdress) throws JAXBException {
+        JAXBContext jc = JAXBContext.newInstance(ResultList.class);
 
-            Marshaller marshaller = jc.createMarshaller();
-            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-            File targetFile = new File(targetFileAdress);
-            marshaller.marshal(resultList, targetFile);
+        Marshaller marshaller = jc.createMarshaller();
+        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+        File targetFile = new File(targetFileAdress);
+        marshaller.marshal(resultList, targetFile);
 
-            success = true;
-        } catch (JAXBException e) {
-            e.printStackTrace();
-        }
-        return success;
     }
 
+
     // FILESTORAGE + season + filename + extension
-    private static List<String> listFilesForFolder(final String folderAddress) {
+    private static List<String> listFilesForFolder(final String folderAddress) throws FileNotFoundException {
         final File folder = new File(folderAddress);
-        //System.out.println(folder.isDirectory());
-        if (folder.isDirectory()){
-            return new ArrayList<>();
+        if (folder.isDirectory() == false){
+            //System.out.println("Directory "+folder.getPath()+" does not exist");
+            System.out.println("No files found in "+folder.getPath());
+            throw new FileNotFoundException();
         }
         List<String> filePaths = new ArrayList<>();
+        System.out.println("Files loaded:");
         for (final File fileEntry : folder.listFiles()) {
             if (fileEntry.isFile()) {
                 if (fileEntry.getName().endsWith(".xml")){
@@ -134,8 +156,8 @@ public class InputFileHandler {
                 }
             }
         }
+        System.out.println("-------------");
         return filePaths;
     }
-
 
 }
