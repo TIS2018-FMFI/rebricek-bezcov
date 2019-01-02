@@ -40,7 +40,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "time",
     "position",
-    "status"
+    "status",
+        "points"
 })
 @XmlRootElement(name = "Result")
 public class Result {
@@ -51,6 +52,19 @@ public class Result {
     protected String position;
     @XmlElement(name = "Status", required = true)
     protected String status;
+
+    @XmlElement(name = "Points", required = false)
+    protected Integer points;
+
+    // not present as ELEMENTS, used in later stages of computing
+    public Integer getPoints() {
+        return points;
+    }
+    public void setPoints(Integer points) {
+        this.points = points;
+    }
+
+
 
     /**
      * Gets the value of the time property.
