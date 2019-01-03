@@ -56,7 +56,7 @@ public class Result {
     @XmlElement(name = "Points", required = false)
     protected Integer points;
 
-    // not present as ELEMENTS, used in later stages of computing
+    // not present as ELEMENT, used in later stages of computing
     public Integer getPoints() {
         return points;
     }

@@ -15,6 +15,7 @@ import javax.xml.bind.Unmarshaller;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -29,7 +30,7 @@ public class InputFileHandler {
             inputResultList = InputFileHandler.unmarshalInputFile(fileAddress);
         } catch (JAXBException e) {
             InteractionModule.printMessage("An Error has occurred while reading file: " + fileAddress);
-            //e.printStackTrace();
+            e.printStackTrace();
             return;
         }
 
@@ -65,7 +66,7 @@ public class InputFileHandler {
             System.out.println("created directory: "+savePath);
         } catch (JAXBException e) {
             InteractionModule.printMessage("An Error has occurred while creating file: " + savePath);
-            //e.printStackTrace();
+            e.printStackTrace();
             return;
         }
         //if (success == false)
@@ -86,7 +87,7 @@ public class InputFileHandler {
         try {
             inputFilePaths = listFilesForFolder(FILESTORAGE+"\\"+season);
         } catch (FileNotFoundException e) {
-            //e.printStackTrace();
+            e.printStackTrace();
             return;
         }
         List<ResultList> loadedResultLists = new ArrayList<>();
@@ -99,12 +100,13 @@ public class InputFileHandler {
                 loadedResultLists.add(verifiedResultList);
             } catch (JAXBException e) {
                 InteractionModule.printMessage("An Error has occurred while reading file: " + fileAddress);
-                //e.printStackTrace();
+                e.printStackTrace();
                 return;
             }
         }
 
         // spusti dalsi MODUL
+
 
         //new RoundPointComputation().compute(loadedResultLists); // new(?)
         System.out.println("ResultLists loaded:");
@@ -112,6 +114,7 @@ public class InputFileHandler {
             System.out.println("rank: "+rl.getEvent().getRank());
         }
         System.out.println("-------------------");
+
     }
 
 

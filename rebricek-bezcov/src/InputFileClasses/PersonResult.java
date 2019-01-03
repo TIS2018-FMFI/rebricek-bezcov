@@ -48,6 +48,8 @@ public class PersonResult {
     @XmlElement(name = "Result", required = true)
     protected Result result;
 
+
+
     /**
      * Gets the value of the person property.
      * 
