@@ -7,6 +7,9 @@ package InputFileHandlingModule;
 import DataVerificationModule.InputFileVerificator;
 import InputFileClasses.ResultList;
 import InteractionModule.InteractionModule;
+import computingModule.RoundPointComputation;
+import configurationModule.ConfigurationFile;
+import ProgramConstraintsModule.ProgramConstraints;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -15,14 +18,14 @@ import javax.xml.bind.Unmarshaller;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 
 public class InputFileHandler {
 
-    private final static String FILESTORAGE = "DATA_STORAGE";
-
+    private final static String DATA_DIRECTORY_NAME = ProgramConstraints.DATA_DIRECTORY_NAME;
+    // TODO na spajane ciest pouzit metody operacneho systemu
+    // TODO nahradit printy za metody Interakcneho modulu
 
     public static void addInputFile(String fileAddress){
         ResultList inputResultList = null;
@@ -37,33 +40,31 @@ public class InputFileHandler {
         // daj skontrolovat InputFileVerificator-u
         ResultList resultList = InputFileVerificator.verifyInputFile(inputResultList);
 
-        //Configuration config = ConfigurationModule.getConfiguration(); // TODO
-        //String season = config.getSeason()    // TODO
-
-        String season = "2018";         // placeholder, dummy value
+        //String season = "2018";         // placeholder, dummy value
+        String season = Integer.toString(new ConfigurationFile().getSeasonYear());
 
         // get FileStorage // TODO
 
         String newFileName = "kolo"+resultList.getEvent().getRank() + ".xml";
 
-        String savePath = FILESTORAGE + '\\'+season + '\\' + newFileName;
+        String savePath = DATA_DIRECTORY_NAME + '\\'+season + '\\' + newFileName;
 
-        File fileStorageFolder = new File(FILESTORAGE);
+        File fileStorageFolder = new File(DATA_DIRECTORY_NAME);
         if (fileStorageFolder.isDirectory() == false) {
-            new File(FILESTORAGE).mkdirs();
+            new File(DATA_DIRECTORY_NAME).mkdirs();
             System.out.println("created directory: "+fileStorageFolder.getPath());
-            //System.out.println("created directory: "+FILESTORAGE);
+            //System.out.println("created directory: "+DATA_DIRECTORY_NAME);
         }
 
-        File seasonFolder = new File(FILESTORAGE + '/'+season);
+        File seasonFolder = new File(DATA_DIRECTORY_NAME + '/'+season);
         if (seasonFolder.isDirectory() == false) {
-            new File(FILESTORAGE + '\\'+season).mkdirs();
-            System.out.println("created directory: "+FILESTORAGE + '\\'+season);
+            new File(DATA_DIRECTORY_NAME + '\\'+season).mkdirs();
+            System.out.println("created directory: "+ DATA_DIRECTORY_NAME + '\\'+season);
         }
 
         try {
             InputFileHandler.marshalInputFile(resultList, savePath);
-            System.out.println("created directory: "+savePath);
+            System.out.println("created file: "+savePath);
         } catch (JAXBException e) {
             InteractionModule.printMessage("An Error has occurred while creating file: " + savePath);
             e.printStackTrace();
@@ -78,14 +79,14 @@ public class InputFileHandler {
 
 
     public static void loadInputFiles(){
-        // Configuration config = ConfigurationModule.getConfiguration();
-        // get fileStorage, season
+        // TODO get fileStorage, season
 
-        String season = "2018";      // placeholder, dummy value
+        //String season = "2018";      // placeholder, dummy value
+        String season = Integer.toString(new ConfigurationFile().getSeasonYear());
 
         List<String> inputFilePaths = null;
         try {
-            inputFilePaths = listFilesForFolder(FILESTORAGE+"\\"+season);
+            inputFilePaths = listFilesForFolder(DATA_DIRECTORY_NAME +"\\"+season);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             return;
@@ -106,15 +107,7 @@ public class InputFileHandler {
         }
 
         // spusti dalsi MODUL
-
-
-        //new RoundPointComputation().compute(loadedResultLists); // new(?)
-        System.out.println("ResultLists loaded:");
-        for (ResultList rl : loadedResultLists){
-            System.out.println("rank: "+rl.getEvent().getRank());
-        }
-        System.out.println("-------------------");
-
+        new RoundPointComputation(loadedResultLists);
     }
 
 
@@ -123,6 +116,7 @@ public class InputFileHandler {
 
         JAXBContext jc = JAXBContext.newInstance(ResultList.class);
 
+        System.out.println(sourceFileAddress);
         File sourceFile = new File(sourceFileAddress);
         Unmarshaller unmarshaller = jc.createUnmarshaller();
         resultList = (ResultList) unmarshaller.unmarshal(sourceFile);
@@ -137,19 +131,21 @@ public class InputFileHandler {
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
         File targetFile = new File(targetFileAdress);
         marshaller.marshal(resultList, targetFile);
-
     }
 
 
-    // FILESTORAGE + season + filename + extension
+    // DATA_DIRECTORY_NAME + season + filename + extension
     private static List<String> listFilesForFolder(final String folderAddress) throws FileNotFoundException {
         final File folder = new File(folderAddress);
         if (folder.isDirectory() == false){
-            //System.out.println("Directory "+folder.getPath()+" does not exist");
-            System.out.println("No files found in "+folder.getPath());
+            System.out.println("Directory "+folder.getPath()+" does not exist");
             throw new FileNotFoundException();
         }
         List<String> filePaths = new ArrayList<>();
+
+
+        // <LOG>
+        System.out.println("-------------");
         System.out.println("Files loaded:");
         for (final File fileEntry : folder.listFiles()) {
             if (fileEntry.isFile()) {
@@ -160,6 +156,8 @@ public class InputFileHandler {
             }
         }
         System.out.println("-------------");
+        // </LOG>
+
         return filePaths;
     }
 

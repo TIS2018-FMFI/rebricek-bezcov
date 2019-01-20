@@ -5,15 +5,14 @@ import InputFileClasses.ResultList;
 import InputFileClasses.StartTime;
 import InteractionModule.InteractionModule;
 
-import java.util.List;
 
 /**
  * @author TomasTakacs
  */
 public class InputFileVerificator {
 
+
     public static ResultList verifyInputFile(ResultList resultList){
-        // skontroluje ...
         if (resultList.getEvent() == null){
             resultList.setEvent(new Event());
         }
@@ -22,7 +21,7 @@ public class InputFileVerificator {
 
         if (event.getRank() == null){
             Integer value = InteractionModule.requestRaceRank();
-            event.setRank(value.toString());
+            event.setRank(value);
         }
         if (event.getName() == null){
             String value = InteractionModule.requestRaceName();
