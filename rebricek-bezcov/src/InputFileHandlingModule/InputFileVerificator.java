@@ -1,4 +1,4 @@
-package DataVerificationModule;
+package InputFileHandlingModule;
 
 import InputFileClasses.Event;
 import InputFileClasses.ResultList;

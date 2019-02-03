@@ -31,9 +31,10 @@ public class InputFileHandler {
         ResultList inputResultList = null;
         try {
             inputResultList = InputFileHandler.unmarshalInputFile(fileAddress);
-        } catch (JAXBException e) {
+        }
+        catch (JAXBException e) {
             InteractionModule.printMessage("An Error has occurred while reading file: " + fileAddress);
-            e.printStackTrace();
+            InteractionModule.printMessage(e.toString());
             return;
         }
 
@@ -45,29 +46,29 @@ public class InputFileHandler {
 
         // get FileStorage // TODO
 
-        String newFileName = "kolo"+resultList.getEvent().getRank() + ".xml";
+        String newFileName = "kolo"+resultList.getEvent().getRound() + ".xml";
 
-        String savePath = DATA_DIRECTORY_NAME + '\\'+season + '\\' + newFileName;
+        String savePath = DATA_DIRECTORY_NAME + '/'+season + '/' + newFileName;
 
         File fileStorageFolder = new File(DATA_DIRECTORY_NAME);
         if (fileStorageFolder.isDirectory() == false) {
             new File(DATA_DIRECTORY_NAME).mkdirs();
-            System.out.println("created directory: "+fileStorageFolder.getPath());
+            InteractionModule.printMessage("created directory: "+fileStorageFolder.getPath());
             //System.out.println("created directory: "+DATA_DIRECTORY_NAME);
         }
 
         File seasonFolder = new File(DATA_DIRECTORY_NAME + '/'+season);
         if (seasonFolder.isDirectory() == false) {
-            new File(DATA_DIRECTORY_NAME + '\\'+season).mkdirs();
-            System.out.println("created directory: "+ DATA_DIRECTORY_NAME + '\\'+season);
+            new File(DATA_DIRECTORY_NAME + '/'+ season).mkdirs();
+            InteractionModule.printMessage("created directory: "+ DATA_DIRECTORY_NAME + '\\'+season);
         }
 
         try {
             InputFileHandler.marshalInputFile(resultList, savePath);
-            System.out.println("created file: "+savePath);
+            InteractionModule.printMessage("created file: "+savePath);
         } catch (JAXBException e) {
             InteractionModule.printMessage("An Error has occurred while creating file: " + savePath);
-            e.printStackTrace();
+            InteractionModule.printMessage(e.toString());
             return;
         }
         //if (success == false)
@@ -79,16 +80,17 @@ public class InputFileHandler {
 
 
     public static void loadInputFiles(){
-        // TODO get fileStorage, season
 
         //String season = "2018";      // placeholder, dummy value
         String season = Integer.toString(new ConfigurationFile().getSeasonYear());
+        String seasonDirectoryName = DATA_DIRECTORY_NAME +"/"+season;
 
         List<String> inputFilePaths = null;
         try {
-            inputFilePaths = listFilesForFolder(DATA_DIRECTORY_NAME +"\\"+season);
+            inputFilePaths = listFilesForFolder(seasonDirectoryName);
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            InteractionModule.printMessage("Directory "+seasonDirectoryName+" does not exist");
+            //e.printStackTrace();
             return;
         }
         List<ResultList> loadedResultLists = new ArrayList<>();
@@ -101,10 +103,21 @@ public class InputFileHandler {
                 loadedResultLists.add(verifiedResultList);
             } catch (JAXBException e) {
                 InteractionModule.printMessage("An Error has occurred while reading file: " + fileAddress);
+                InteractionModule.printMessage(e.toString());
                 e.printStackTrace();
                 return;
             }
         }
+
+        // <TEST>
+//        System.out.println(loadedResultLists.get(0).getClassResult().size());
+//        int person_count = 0;
+//        for (ClassResult cr : loadedResultLists.get(0).getClassResult()){
+//            person_count+=cr.getPersonResult().size();
+//        }
+//        System.out.println(person_count);
+        // </TEST>
+
 
         // spusti dalsi MODUL
         new RoundPointComputation(loadedResultLists);
@@ -116,7 +129,6 @@ public class InputFileHandler {
 
         JAXBContext jc = JAXBContext.newInstance(ResultList.class);
 
-        System.out.println(sourceFileAddress);
         File sourceFile = new File(sourceFileAddress);
         Unmarshaller unmarshaller = jc.createUnmarshaller();
         resultList = (ResultList) unmarshaller.unmarshal(sourceFile);
@@ -138,25 +150,24 @@ public class InputFileHandler {
     private static List<String> listFilesForFolder(final String folderAddress) throws FileNotFoundException {
         final File folder = new File(folderAddress);
         if (folder.isDirectory() == false){
-            System.out.println("Directory "+folder.getPath()+" does not exist");
             throw new FileNotFoundException();
         }
         List<String> filePaths = new ArrayList<>();
 
 
-        // <LOG>
-        System.out.println("-------------");
-        System.out.println("Files loaded:");
+//        System.out.println("-------------");
+//        System.out.println("Files loaded:");
+
         for (final File fileEntry : folder.listFiles()) {
             if (fileEntry.isFile()) {
                 if (fileEntry.getName().endsWith(".xml")){
-                    System.out.println(fileEntry.getName());
+//                    System.out.println(fileEntry.getName());
                     filePaths.add(fileEntry.getPath());
                 }
             }
         }
-        System.out.println("-------------");
-        // </LOG>
+
+//        System.out.println("-------------");
 
         return filePaths;
     }

@@ -41,7 +41,7 @@ import javax.xml.bind.annotation.XmlType;
     "id",
     "name",
     "startTime",
-    "rank"
+        "round"
 })
 public class Event {
 
@@ -51,8 +51,8 @@ public class Event {
     protected String name;
     @XmlElement(name = "StartTime", required = true)
     protected StartTime startTime;
-    @XmlElement(name = "Rank")
-    protected Integer rank;
+    @XmlElement(name = "Round")
+    protected Integer round;
 
     /**
      * Gets the value of the id property.
@@ -127,27 +127,27 @@ public class Event {
     }
 
     /**
-     * Gets the value of the rank property.
+     * Gets the value of the round property.
      * 
      * @return
      *     possible object is
      *     {@link Integer }
      *     
      */
-    public Integer getRank() {
-        return rank;
+    public Integer getRound() {
+        return round;
     }
 
     /**
-     * Sets the value of the rank property.
+     * Sets the value of the round property.
      * 
      * @param value
      *     allowed object is
      *     {@link Integer }
      *     
      */
-    public void setRank(Integer value) {
-        this.rank = value;
+    public void setRound(Integer value) {
+        this.round = value;
     }
 
 }
