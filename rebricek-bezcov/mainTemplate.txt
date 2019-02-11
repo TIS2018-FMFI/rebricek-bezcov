@@ -1,0 +1,49 @@
+<html>
+<head>
+	<meta charset="utf-8">
+		<title>Sanasport Cup</title>
+		<link href="stylesheet.css" rel="stylesheet" media="all"> 
+		<link href="printsheet.css" rel="stylesheet" media="print">
+	</head>
+	<body>
+		<header>
+			<div id = "v1">
+				<section id = "v1c"> <b>Sanasport Cup 2018 <br>Západná oblasť SZOŠ</b> </section>
+				<img src="logo.png" alt="logo">
+			</div>
+			<div id = "v2">
+				<br>Bodovanie: @bodovanie. 
+				<br>Počíta sa @pocetVysledkov najlepších výsledkov
+			</div>
+			<div id = "v3">
+				<br>Informácie a reklamácie: <i>Richard Balogh SKS6901</i> &lt;<b>balogh@elf.stuba.sk</b>&gt;
+			</div>
+		</header>
+		<nav><table><tr>
+@navigacia		</tr></table></nav>
+		<table>
+			<thead><tr>
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+@poradieKol				<td></td>
+			</tr>
+			<tr>
+				<td></td> 
+				<td></td> 
+				<td></td>
+				<td></td> 
+				<td></td> 
+@datumyKol				<td></td>
+			</tr>
+			<tr>
+				<td></td> 
+				<td><div><b>Zmena oproti predošlému kolu</b></div></td> <td></td>
+				<td></td> 
+				<td></td> 
+@nazvyKol				<td><b>Spolu</b></td> 
+			</tr></thead>
+@vysledky	</body>
+</html>

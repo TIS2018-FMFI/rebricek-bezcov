@@ -1,0 +1,46 @@
+/* CSS Document */
+body{
+	font-family: "Calibry", sans-serif;
+	font-size: 12px;
+}
+#v1{
+	font-size: 17px;
+	margin: auto;
+	width: 600px;
+}
+#v1c{
+	float: left;
+	width: 350px;
+}
+img{
+	width: 250px;
+}
+#v2{
+	font-size: 15px;
+	text-align: center;
+}
+#v3{
+	font-size: 11px;
+	text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+	margin-top: 10px;
+	font-size: 13px;
+	float: middle;
+}
+
+th, td{
+	border: 1px solid #000000;
+	text-align: center;
+	width: 80px;
+}
+
+.categ{
+	background-color: #CCCCCC;
+}
+
+td.left {
+	text-align: left;
+}

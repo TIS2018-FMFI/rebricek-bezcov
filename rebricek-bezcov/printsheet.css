@@ -1,0 +1,40 @@
+/* CSS Document */
+body{
+	font-family: "Calibry", sans-serif;
+	font-size: 20px;
+}
+
+nav{
+	display: none;
+}
+
+#v1{
+	font-size: 20px;
+	margin: auto;
+	width: 800px;
+}
+
+#v1c{
+	float: left;
+	width: 450px;
+}
+img{
+	width: 350px;
+}
+
+#v2{
+	font-size: 18px;
+	text-align: center;
+}
+#v3{
+	font-size: 14px;
+	text-align: center;
+}
+
+table { 
+	page-break-after:auto;
+	font-size: 17px;
+}
+tr    { page-break-inside:avoid; page-break-after:auto; }
+td    { page-break-inside:avoid; page-break-after:auto; }
+thead { display:table-header-group; }
