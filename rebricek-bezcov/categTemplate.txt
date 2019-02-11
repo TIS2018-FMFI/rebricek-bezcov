@@ -1,0 +1,9 @@
+			<thead><tr class = "categ" id = "@kategoria">
+				<td></td>
+				<td></td>
+				<td><b>@kategoria</b></td>
+				<td></td>
+				<td></td>
+@prazdneStlpceKol				<td></td>
+			</tr></thead>
+@vysledkyBezcov

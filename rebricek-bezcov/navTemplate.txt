@@ -1,0 +1,1 @@
+			<td><a href="#@kategoria">@kategoria</a></td>
