@@ -1,8 +1,8 @@
 package InputFileHandlingModule;
+
 /**
  * @author TomasTakacs
  */
-
 
 import DataVerificationModule.InputFileVerificator;
 import InputFileClasses.ResultList;
@@ -17,6 +17,7 @@ import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,8 +25,6 @@ import java.util.List;
 public class InputFileHandler {
 
     private final static String DATA_DIRECTORY_NAME = ProgramConstraints.DATA_DIRECTORY_NAME;
-    // TODO na spajane ciest pouzit metody operacneho systemu
-    // TODO nahradit printy za metody Interakcneho modulu
 
     public static void addInputFile(String fileAddress){
         ResultList inputResultList = null;
@@ -41,26 +40,23 @@ public class InputFileHandler {
         // daj skontrolovat InputFileVerificator-u
         ResultList resultList = InputFileVerificator.verifyInputFile(inputResultList);
 
-        //String season = "2018";         // placeholder, dummy value
-        String season = Integer.toString(new ConfigurationFile().getSeasonYear());
 
-        // get FileStorage // TODO
+        ConfigurationFile configurationFile = new ConfigurationFile();
 
+        String season = Integer.toString(configurationFile.getSeasonYear());
         String newFileName = "kolo"+resultList.getEvent().getRound() + ".xml";
-
         String savePath = DATA_DIRECTORY_NAME + '/'+season + '/' + newFileName;
 
         File fileStorageFolder = new File(DATA_DIRECTORY_NAME);
         if (fileStorageFolder.isDirectory() == false) {
             new File(DATA_DIRECTORY_NAME).mkdirs();
             InteractionModule.printMessage("created directory: "+fileStorageFolder.getPath());
-            //System.out.println("created directory: "+DATA_DIRECTORY_NAME);
         }
 
         File seasonFolder = new File(DATA_DIRECTORY_NAME + '/'+season);
         if (seasonFolder.isDirectory() == false) {
             new File(DATA_DIRECTORY_NAME + '/'+ season).mkdirs();
-            InteractionModule.printMessage("created directory: "+ DATA_DIRECTORY_NAME + '\\'+season);
+            InteractionModule.printMessage("created directory: "+ DATA_DIRECTORY_NAME + '/'+season);
         }
 
         try {
@@ -71,9 +67,6 @@ public class InputFileHandler {
             InteractionModule.printMessage(e.toString());
             return;
         }
-        //if (success == false)
-        // InteractionModule.printMessage(MESSAGE_MARSHALLING_FAILED)
-        // nastala chyba pri ukladaní vstupného súboru
 
         loadInputFiles();
     }
@@ -81,8 +74,8 @@ public class InputFileHandler {
 
     public static void loadInputFiles(){
 
-        //String season = "2018";      // placeholder, dummy value
-        String season = Integer.toString(new ConfigurationFile().getSeasonYear());
+        ConfigurationFile configurationFile = new ConfigurationFile();
+        String season = Integer.toString(configurationFile.getSeasonYear());
         String seasonDirectoryName = DATA_DIRECTORY_NAME +"/"+season;
 
         List<String> inputFilePaths = null;
@@ -104,20 +97,15 @@ public class InputFileHandler {
             } catch (JAXBException e) {
                 InteractionModule.printMessage("An Error has occurred while reading file: " + fileAddress);
                 InteractionModule.printMessage(e.toString());
-                e.printStackTrace();
+                //e.printStackTrace();
                 return;
             }
         }
 
-        // <TEST>
-//        System.out.println(loadedResultLists.get(0).getClassResult().size());
-//        int person_count = 0;
-//        for (ClassResult cr : loadedResultLists.get(0).getClassResult()){
-//            person_count+=cr.getPersonResult().size();
-//        }
-//        System.out.println(person_count);
-        // </TEST>
-
+        if (loadedResultLists.size() == 0) {
+            InteractionModule.printMessage("Directory "+seasonDirectoryName+" is empty.");
+            return;
+        }
 
         // spusti dalsi MODUL
         new RoundPointComputation(loadedResultLists);
@@ -145,8 +133,6 @@ public class InputFileHandler {
         marshaller.marshal(resultList, targetFile);
     }
 
-
-    // DATA_DIRECTORY_NAME + season + filename + extension
     private static List<String> listFilesForFolder(final String folderAddress) throws FileNotFoundException {
         final File folder = new File(folderAddress);
         if (folder.isDirectory() == false){
@@ -155,19 +141,19 @@ public class InputFileHandler {
         List<String> filePaths = new ArrayList<>();
 
 
-//        System.out.println("-------------");
-//        System.out.println("Files loaded:");
+        InteractionModule.printMessage("-------------");
+        InteractionModule.printMessage("Files loaded:");
 
         for (final File fileEntry : folder.listFiles()) {
             if (fileEntry.isFile()) {
                 if (fileEntry.getName().endsWith(".xml")){
-//                    System.out.println(fileEntry.getName());
+                    InteractionModule.printMessage(fileEntry.getName());
                     filePaths.add(fileEntry.getPath());
                 }
             }
         }
 
-//        System.out.println("-------------");
+        InteractionModule.printMessage("-------------");
 
         return filePaths;
     }
