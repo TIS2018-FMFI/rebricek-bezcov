@@ -1,0 +1,7 @@
+Zip obsahuje zlozku 'rebricek-bezcov' so zdrojovym kodom, dodatocnymi potrebnymi subormi a .jarkom 'rebricek-bezcov.jar', ktorym sa aplikacia spusta. 
+Je potrebne, aby pri spustani bolo .jarko umiestnene v tejto zlozke (pri behu programu bude potrebovat textove a .css subory). 
+Ked budete spustat .jarko z cmd, je mozne ho spustit ako 'java -jar rebricek-bezcov.jar -help', kedy vypise mozne scenare spustenia. 
+Okrem toho sa da spustit ako 'java -jar rebricek-bezcov.jar -a [cesta k suboru]', kedy nakopiruje subor zo zadanej cesty a ulozi ho do zlozky DATA_STORAGE a spusti vypocet nad vsetkymi ulozenymi subormi. 
+Dalej sa da spustit ako 'java -jar prototype.jar -b', kedy spusti vypocet nad vsetkymi aktualne ulozenymi subormi. (ulozene subory = subory v zlozke DATA_STORAGE\2018\)
+Ak pri spusteni .jar suboru nezadate ziadny prepinac, aplikacia vam da interaktivne na vyber medzi scenarmi a/b.
+Aplikacia vygeneruje .html subor do zlozky, v ktorej sa nachadza spustany .jar subor.
