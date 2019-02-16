@@ -27,6 +27,25 @@ public class InputFileHandler {
     private final static String DATA_DIRECTORY_NAME = ProgramConstraints.DATA_DIRECTORY_NAME;
 
     public static void addInputFile(String fileAddress){
+        saveInputFile(fileAddress);
+        loadInputFiles();
+    }
+
+    public static void loadInputFiles(){
+        List<ResultList> loadedResultLists = getInputFiles();
+        new RoundPointComputation(loadedResultLists);
+    }
+
+
+    //================================================================
+
+    public static void saveInputFile(String fileAddress){
+
+        if (!fileAddress.contains(".xml")){
+            InteractionModule.printMessage("File is not an XML file.");
+            return;
+        }
+
         ResultList inputResultList = null;
         try {
             inputResultList = InputFileHandler.unmarshalInputFile(fileAddress);
@@ -67,12 +86,10 @@ public class InputFileHandler {
             InteractionModule.printMessage(e.toString());
             return;
         }
-
-        loadInputFiles();
     }
 
 
-    public static void loadInputFiles(){
+    public static List<ResultList> getInputFiles(){
 
         ConfigurationFile configurationFile = new ConfigurationFile();
         String season = Integer.toString(configurationFile.getSeasonYear());
@@ -84,7 +101,7 @@ public class InputFileHandler {
         } catch (FileNotFoundException e) {
             InteractionModule.printMessage("Directory "+seasonDirectoryName+" does not exist");
             //e.printStackTrace();
-            return;
+            return List.of();
         }
         List<ResultList> loadedResultLists = new ArrayList<>();
 
@@ -98,19 +115,20 @@ public class InputFileHandler {
                 InteractionModule.printMessage("An Error has occurred while reading file: " + fileAddress);
                 InteractionModule.printMessage(e.toString());
                 //e.printStackTrace();
-                return;
+                return List.of();
             }
         }
 
         if (loadedResultLists.size() == 0) {
             InteractionModule.printMessage("Directory "+seasonDirectoryName+" is empty.");
-            return;
+            return List.of();
         }
 
-        // spusti dalsi MODUL
-        new RoundPointComputation(loadedResultLists);
+        return loadedResultLists;
     }
 
+
+    //==================================================================================
 
     private static ResultList unmarshalInputFile(String sourceFileAddress) throws JAXBException {
         ResultList resultList = null;
