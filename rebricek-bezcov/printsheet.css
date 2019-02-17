@@ -1,15 +1,19 @@
 /* CSS Document */
 body{
 	font-family: "Calibry", sans-serif;
-	font-size: 20px;
+	font-size: 14px;
 }
 
 nav{
 	display: none;
 }
 
+.noDisplay{
+	display: none;
+}
+
 #v1{
-	font-size: 20px;
+	font-size: 19px;
 	margin: auto;
 	width: 800px;
 }
@@ -23,7 +27,7 @@ img{
 }
 
 #v2{
-	font-size: 18px;
+	font-size: 17px;
 	text-align: center;
 }
 #v3{
@@ -33,7 +37,7 @@ img{
 
 table { 
 	page-break-after:auto;
-	font-size: 17px;
+	font-size: 13px;
 }
 tr    { page-break-inside:avoid; page-break-after:auto; }
 td    { page-break-inside:avoid; page-break-after:auto; }
