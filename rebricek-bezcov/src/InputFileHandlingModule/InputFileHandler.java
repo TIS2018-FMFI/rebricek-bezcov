@@ -101,7 +101,7 @@ public class InputFileHandler {
         } catch (FileNotFoundException e) {
             InteractionModule.printMessage("Directory "+seasonDirectoryName+" does not exist");
             //e.printStackTrace();
-            return List.of();
+            return new ArrayList<>();
         }
         List<ResultList> loadedResultLists = new ArrayList<>();
 
@@ -115,13 +115,13 @@ public class InputFileHandler {
                 InteractionModule.printMessage("An Error has occurred while reading file: " + fileAddress);
                 InteractionModule.printMessage(e.toString());
                 //e.printStackTrace();
-                return List.of();
+                return new ArrayList<>();
             }
         }
 
         if (loadedResultLists.size() == 0) {
             InteractionModule.printMessage("Directory "+seasonDirectoryName+" is empty.");
-            return List.of();
+            return new ArrayList<>();
         }
 
         return loadedResultLists;
