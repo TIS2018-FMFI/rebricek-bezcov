@@ -1,8 +1,8 @@
 			<tr>
 				<td>@poradie</td>
-				<td>@zmena</td>
+				<td class = "@farba"><b>@zmena</b></td>
 				<td class = "left">@meno</td>
 				<td class = "left">@priezvisko</td>
 				<td>@id</td>
-@bodyKol				<td>@spolu</td>
+@bodyKol				<td><b>@spolu</b></td>
 			</tr>
