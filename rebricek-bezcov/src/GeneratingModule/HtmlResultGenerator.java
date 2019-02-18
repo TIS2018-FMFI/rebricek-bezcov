@@ -2,10 +2,7 @@ package GeneratingModule;
 import assigningModule.*;
 import configurationModule.ConfigurationFile;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
@@ -27,17 +24,38 @@ public class HtmlResultGenerator {
     private Map<String, Map<Integer, List<RunnerOverall>>> previous = new HashMap<>();
 
 
-    public HtmlResultGenerator(Map<String,  Map<String, RunnerOverall>> results, List<String> events, List<String> dates){
+    public HtmlResultGenerator(Map<String,  Map<String, RunnerOverall>> results, List<String> events, List<String> dates) {
         scoring = setScoring();
         numOfResults = "" + configurationFile.getRankedRounds();
         this.results = results;
         this.events = events;
         this.dates = dates;
         this.countOfEvents = events.size();
-        mainTemplate = readStringFromFile("mainTemplate.txt");
-        navTemplate = readStringFromFile("navTemplate.txt");
-        categoryTemplate = readStringFromFile("categTemplate.txt");
-        runnerTemplate = readStringFromFile("runnerTemplate.txt");
+
+        Scanner scanner = null;
+        try { scanner = new Scanner( new File("mainTemplate.txt"), "UTF-8" );
+        } catch (FileNotFoundException e) { e.printStackTrace(); }
+        mainTemplate = scanner.useDelimiter("\\A").next();
+        scanner.close();
+
+        try { scanner = new Scanner( new File("navTemplate.txt"), "UTF-8" );
+        } catch (FileNotFoundException e) { e.printStackTrace(); }
+        navTemplate = scanner.useDelimiter("\\A").next();
+        scanner.close();
+
+        try { scanner = new Scanner( new File("categTemplate.txt"), "UTF-8" );
+        } catch (FileNotFoundException e) { e.printStackTrace(); }
+        categoryTemplate = scanner.useDelimiter("\\A").next();
+        scanner.close();
+
+        try { scanner = new Scanner( new File("runnerTemplate.txt"), "UTF-8" );
+        } catch (FileNotFoundException e) { e.printStackTrace(); }
+        runnerTemplate = scanner.useDelimiter("\\A").next();
+        scanner.close();
+        //mainTemplate = readStringFromFile("mainTemplate.txt");
+        //navTemplate = readStringFromFile("navTemplate.txt");
+        //categoryTemplate = readStringFromFile("categTemplate.txt");
+        //runnerTemplate = readStringFromFile("runnerTemplate.txt");
         generateFile();
     }
 
@@ -77,7 +95,14 @@ public class HtmlResultGenerator {
         for (int i = 0; i < countOfEvents; i++){
             s.append("\t\t\t\t<td></td>\n");
         }
+        String color = "green";
+        if(categoryName.charAt(0) == 'M'){
+            color = "blue";
+        }else if(categoryName.charAt(0) =='W'){
+            color = "pink";
+        }
         return categoryTemplate
+                .replaceAll("@podfarbenie", color)
                 .replaceAll("@kategoria", categoryName)
                 .replaceAll("@prazdneStlpceKol", s.toString())
                 .replaceAll("@vysledkyBezcov", allRunnersCategoryTable(categoryName));
@@ -88,20 +113,28 @@ public class HtmlResultGenerator {
         for (int i = 0; i < countOfEvents; i++){
             int points = runner.getRounds().get(i);
             if (points == 0) {
-                s.append("\t\t\t\t<td></td>\n");
+                s.append("\t\t\t\t<td class = \"width5\"></td>\n");
             }else if (points > 0) {
-                s.append("\t\t\t\t<td>").append(points).append("</td>\n");
+                s.append("\t\t\t\t<td class = \"width5\">").append(points).append("</td>\n");
             }else  {
-                s.append("\t\t\t\t<td>0</td>\n");
+                s.append("\t\t\t\t<td class = \"width5\">0</td>\n");
             }
         }
         String orderString = Integer.toString(order);
         if (runner.getPoints() == 0){
             orderString = "";
         }
+        String change = getChange(runner, categoryName, order);
+        String color = "blueText";
+        if(change.charAt(0) == '↓'){
+            color = "redText";
+        }else if(change.charAt(0) == '↑'){
+            color = "greenText";
+        }
         return runnerTemplate
                 .replaceAll("@poradie", orderString)
-                .replaceAll("@zmena", getChange(runner, categoryName, order))//TODO
+                .replaceAll("@farba", color)
+                .replaceAll("@zmena", change)
                 .replaceAll("@meno", runner.getGivenName())
                 .replaceAll("@priezvisko", runner.getFamilyName())
                 .replaceAll("@id", runner.getIdentificator())
@@ -112,7 +145,7 @@ public class HtmlResultGenerator {
     private String eventsNamesToTable(){
         StringBuilder result = new StringBuilder();
         for (String eventName: events) {
-            result.append("\t\t\t\t<td><div><b>").append(eventName).append("</b></div></td>\n");
+            result.append("\t\t\t\t<td class=\"rotate\"><div><span><b>").append(eventName).append("</b></span></div></td>\n");
         }
         return result.toString();
     }
@@ -139,9 +172,13 @@ public class HtmlResultGenerator {
         for (String categoryName : categories) {
             if(notFirst){
                 result.append("\t\t<table>\n");
+                //result.append("\t\t<tr><td></td></tr>\n");
             }
             result.append(fillCategoryTemplate(categoryName));
             result.append("\t\t</table>\n");
+            result.append("<table class = \"noDisplay\"><tr>\n" +
+                    "\t\t\t<td><a href=\"#top\">↑</a></td>\n" +
+                    "\t\t</tr></table>");
             notFirst = true;
         }
         return result.toString();
