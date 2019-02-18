@@ -1,0 +1,2918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResultList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" iofVersion="3.0" status="Complete" creator="ISSZOS" xmlns="http://www.orienteering.org/datastandard/3.0">
+ <Event>
+  <Id type="ISSZOS">120</Id>
+  <Name>Trojkráľové parkové preteky 2018 (Trojkráľové parkové preteky 2018)</Name>
+  <StartTime>
+   <Date>2018-01-06</Date>
+  </StartTime>
+  <Round>1</Round>
+ </Event>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1580</Id>
+   <Name>M -10 </Name>
+   <ShortName>M -10 </ShortName>
+  </Class>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Ondra</Family>
+     <Given>Gregor</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1044</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">10029</Id>
+    <Id type="SVK">SPE0901</Id>
+    <Name>
+     <Family>Havlík</Family>
+     <Given>Andrej</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1501</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">10028</Id>
+    <Id type="SVK">SPE0802</Id>
+    <Name>
+     <Family>Knapčok</Family>
+     <Given>Matej</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1503</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">10101</Id>
+    <Id type="SVK">SKS09AD</Id>
+    <Name>
+     <Family>Gross</Family>
+     <Given>Patrik</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1518</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">10122</Id>
+    <Id type="SVK">SPE0803</Id>
+    <Name>
+     <Family>Bobovský</Family>
+     <Given>Samuel</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2992</Time>
+    <Position>5</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK">SPE05AE</Id>
+    <Name>
+     <Family>Stančík</Family>
+     <Given>Braňo</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3054</Time>
+    <Position>6</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1581</Id>
+   <Name>M -12 </Name>
+   <ShortName>M -12 </ShortName>
+  </Class>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2255</Id>
+    <Id type="SVK">VBA0601</Id>
+    <Name>
+     <Family>Kováč</Family>
+     <Given>Ondrej</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1290</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">10012</Id>
+    <Id type="SVK">SKS0701</Id>
+    <Name>
+     <Family>Brňák</Family>
+     <Given>Jakub</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1319</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2267</Id>
+    <Id type="SVK">RBA0702</Id>
+    <Name>
+     <Family>Šmelík</Family>
+     <Given>Daniel</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1352</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">10031</Id>
+    <Id type="SVK">SPE0603</Id>
+    <Name>
+     <Family>Zedníček</Family>
+     <Given>Michal</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1414</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2323</Id>
+    <Id type="SVK">FBA0602</Id>
+    <Name>
+     <Family>Sýkora</Family>
+     <Given>Tristan</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1439</Time>
+    <Position>5</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2341</Id>
+    <Id type="SVK">SPE0702</Id>
+    <Name>
+     <Family>Mikloš</Family>
+     <Given>Matúš</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1568</Time>
+    <Position>6</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Berčík</Family>
+     <Given>Jakub</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1666</Time>
+    <Position>7</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2194</Id>
+    <Id type="SVK">RBA0701</Id>
+    <Name>
+     <Family>Lanátor</Family>
+     <Given>Jakub</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1748</Time>
+    <Position>8</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2233</Id>
+    <Id type="SVK">VZA0701</Id>
+    <Name>
+     <Family>Volkov</Family>
+     <Given>Maksym</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2248</Time>
+    <Position>9</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">1906</Id>
+    <Id type="SVK">FBA0701</Id>
+    <Name>
+     <Family>Janota</Family>
+     <Given>Maximilián</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>5515</Time>
+    <Position>10</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1582</Id>
+   <Name>M -14 </Name>
+   <ShortName>M -14 </ShortName>
+  </Class>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2311</Id>
+    <Id type="SVK">FBA0503</Id>
+    <Name>
+     <Family>Kasza</Family>
+     <Given>Tomáš</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2332</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">10032</Id>
+    <Id type="SVK">SPE0405</Id>
+    <Name>
+     <Family>Zedníček</Family>
+     <Given>Tomáš</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2972</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2344</Id>
+    <Id type="SVK">SPE0501</Id>
+    <Name>
+     <Family>Hostačný</Family>
+     <Given>Samuel</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2989</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2111</Id>
+    <Id type="SVK">SKS0401</Id>
+    <Name>
+     <Family>Urban</Family>
+     <Given>Michal</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3150</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2404</Id>
+    <Id type="SVK">FBA0506</Id>
+    <Name>
+     <Family>Novosad</Family>
+     <Given>Adam</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3817</Time>
+    <Position>5</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">10003</Id>
+    <Id type="SVK">SKS0404</Id>
+    <Name>
+     <Family>Gross</Family>
+     <Given>Oliver</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>4256</Time>
+    <Position>6</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2310</Id>
+    <Id type="SVK">FBA0504</Id>
+    <Name>
+     <Family>Koman</Family>
+     <Given>Ján</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>4700</Time>
+    <Position>7</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1583</Id>
+   <Name>M -16 </Name>
+   <ShortName>M -16 </ShortName>
+  </Class>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2151</Id>
+    <Id type="SVK">SPE0303</Id>
+    <Name>
+     <Family>Fedor</Family>
+     <Given>Tibor</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1689</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">1903</Id>
+    <Id type="SVK">PEZ0201</Id>
+    <Name>
+     <Family>Dubovský</Family>
+     <Given>Filip</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2359</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2068</Id>
+    <Id type="SVK">SKS0301</Id>
+    <Name>
+     <Family>Balogh</Family>
+     <Given>Michal</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2401</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2054</Id>
+    <Id type="SVK">VBA0301</Id>
+    <Name>
+     <Family>Lago</Family>
+     <Given>Oliver</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2599</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2051</Id>
+    <Id type="SVK">VBA0201</Id>
+    <Name>
+     <Family>Navrátil</Family>
+     <Given>Matej</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2810</Time>
+    <Position>5</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">10104</Id>
+    <Id type="SVK">SPE0313</Id>
+    <Name>
+     <Family>Lučenič</Family>
+     <Given>Timotej</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>0</Time>
+    <Status>MissingPunch</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1584</Id>
+   <Name>M -18 </Name>
+   <ShortName>M -18 </ShortName>
+  </Class>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2109</Id>
+    <Id type="SVK">SKS0102</Id>
+    <Name>
+     <Family>Urban</Family>
+     <Given>Matej</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2400</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2069</Id>
+    <Id type="SVK">SKS0101</Id>
+    <Name>
+     <Family>Balogh</Family>
+     <Given>Matúš</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2912</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1585</Id>
+   <Name>M 19- </Name>
+   <ShortName>M 19- </ShortName>
+  </Class>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">871</Id>
+    <Id type="SVK">FBA8102</Id>
+    <Name>
+     <Family>Bukovac</Family>
+     <Given>Pavol</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1445</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">895</Id>
+    <Id type="SVK">BBA7713</Id>
+    <Name>
+     <Family>Dávidík</Family>
+     <Given>Marian</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1530</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2390</Id>
+    <Id type="SVK">SKS8901</Id>
+    <Name>
+     <Family>Kubina</Family>
+     <Given>Filip</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1713</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Vlažný</Family>
+     <Given>Jakub</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1807</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">417</Id>
+    <Id type="SVK">FBA9101</Id>
+    <Name>
+     <Family>Mižúr</Family>
+     <Given>Peter</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1812</Time>
+    <Position>5</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">1622</Id>
+    <Id type="SVK">TKE8301</Id>
+    <Name>
+     <Family>Kučera</Family>
+     <Given>Roman</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2018</Time>
+    <Position>6</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">1054</Id>
+    <Id type="SVK">VBA7601</Id>
+    <Name>
+     <Family>Lago</Family>
+     <Given>Miroslav</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2166</Time>
+    <Position>7</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">1943</Id>
+    <Id type="SVK">RBA7204</Id>
+    <Name>
+     <Family>Mikluš</Family>
+     <Given>Marián</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2181</Time>
+    <Position>8</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2087</Id>
+    <Id type="SVK">VZA8002</Id>
+    <Name>
+     <Family>Volkov</Family>
+     <Given>Alexander</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2266</Time>
+    <Position>9</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">680</Id>
+    <Id type="SVK">VBA6501</Id>
+    <Name>
+     <Family>Mlynárik</Family>
+     <Given>Peter</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2285</Time>
+    <Position>10</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">1901</Id>
+    <Id type="SVK">PEZ9901</Id>
+    <Name>
+     <Family>Dubovský</Family>
+     <Given>Andrej</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2369</Time>
+    <Position>11</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">609</Id>
+    <Id type="SVK">SPE5801</Id>
+    <Name>
+     <Family>Piják</Family>
+     <Given>Jaroslav</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2385</Time>
+    <Position>12</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">1137</Id>
+    <Id type="SVK">SPE7902</Id>
+    <Name>
+     <Family>Pavelek</Family>
+     <Given>Michal</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2432</Time>
+    <Position>13</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2108</Id>
+    <Id type="SVK">SKS7401</Id>
+    <Name>
+     <Family>Urban</Family>
+     <Given>Marek</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2479</Time>
+    <Position>14</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2152</Id>
+    <Id type="SVK">SPE0003</Id>
+    <Name>
+     <Family>Kebis</Family>
+     <Given>Pavol</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2502</Time>
+    <Position>15</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">1310</Id>
+    <Id type="SVK">RBA7903</Id>
+    <Name>
+     <Family>Lanátor</Family>
+     <Given>Tibor</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2593</Time>
+    <Position>16</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">1945</Id>
+    <Id type="SVK">RBA5902</Id>
+    <Name>
+     <Family>Jánoška</Family>
+     <Given>Jozef</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2635</Time>
+    <Position>17</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">1997</Id>
+    <Id type="SVK">RBA5803</Id>
+    <Name>
+     <Family>Štubňa</Family>
+     <Given>Ján</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2750</Time>
+    <Position>18</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Mazak</Family>
+     <Given>Jan</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2947</Time>
+    <Position>19</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">10129</Id>
+    <Id type="SVK">SKS80AC</Id>
+    <Name>
+     <Family>Kudla</Family>
+     <Given>Jozef</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3181</Time>
+    <Position>20</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Kianička</Family>
+     <Given>Ján</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3297</Time>
+    <Position>21</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2056</Id>
+    <Id type="SVK">VBA9901</Id>
+    <Name>
+     <Family>Navrátil</Family>
+     <Given>Adam</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3929</Time>
+    <Position>22</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Uhrík</Family>
+     <Given>Pavol</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>4614</Time>
+    <Position>23</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">736</Id>
+    <Id type="SVK">FBA7903</Id>
+    <Name>
+     <Family>Janota</Family>
+     <Given>Vladislav</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>6475</Time>
+    <Position>24</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">671</Id>
+    <Id type="SVK">RBA6603</Id>
+    <Name>
+     <Family>Šmelík</Family>
+     <Given>Juraj</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>0</Time>
+    <Status>MissingPunch</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1586</Id>
+   <Name>M 40- </Name>
+   <ShortName>M 40- </ShortName>
+  </Class>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Kroupa</Family>
+     <Given>Günther</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1899</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">202</Id>
+    <Id type="SVK">VBA6601</Id>
+    <Name>
+     <Family>Navrátil</Family>
+     <Given>Rostislav</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1917</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">213</Id>
+    <Id type="SVK">VBA7101</Id>
+    <Name>
+     <Family>Kováč</Family>
+     <Given>Milan</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2109</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">682</Id>
+    <Id type="SVK">CNR7201</Id>
+    <Name>
+     <Family>Bednárik</Family>
+     <Given>Martin</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2178</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Čierny</Family>
+     <Given>Jozef</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2262</Time>
+    <Position>5</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2161</Id>
+    <Id type="SVK">SKS7501</Id>
+    <Name>
+     <Family>Vorlíček</Family>
+     <Given>Peter</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2576</Time>
+    <Position>6</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2070</Id>
+    <Id type="SVK">SKS6901</Id>
+    <Name>
+     <Family>Balogh</Family>
+     <Given>Richard</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2614</Time>
+    <Position>7</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">178</Id>
+    <Id type="SVK">PEZ7303</Id>
+    <Name>
+     <Family>Féder</Family>
+     <Given>Medard</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2625</Time>
+    <Position>8</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">10083</Id>
+    <Id type="SVK">FBA6901</Id>
+    <Name>
+     <Family>Patassi</Family>
+     <Given>Michal</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2662</Time>
+    <Position>9</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">654</Id>
+    <Id type="SVK">RBA5801</Id>
+    <Name>
+     <Family>Formanko</Family>
+     <Given>Dušan</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2737</Time>
+    <Position>10</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2312</Id>
+    <Id type="SVK">FBA7102</Id>
+    <Name>
+     <Family>Kasza</Family>
+     <Given>Ladislav</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2967</Time>
+    <Position>11</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2360</Id>
+    <Id type="SVK">RBA7001</Id>
+    <Name>
+     <Family>Paško</Family>
+     <Given>Marko</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3533</Time>
+    <Position>12</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2090</Id>
+    <Id type="SVK">PEZ6401</Id>
+    <Name>
+     <Family>Kučera</Family>
+     <Given>Roman</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3860</Time>
+    <Position>13</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1587</Id>
+   <Name>M 55- </Name>
+   <ShortName>M 55- </ShortName>
+  </Class>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">1975</Id>
+    <Id type="SVK">SPE5502</Id>
+    <Name>
+     <Family>Oravec</Family>
+     <Given>Ivan</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2006</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">664</Id>
+    <Id type="SVK">RBA5802</Id>
+    <Name>
+     <Family>Petrinec</Family>
+     <Given>Milan</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2207</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">22</Id>
+    <Id type="SVK">FBA5501</Id>
+    <Name>
+     <Family>Mižúr</Family>
+     <Given>Ján</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2232</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">196</Id>
+    <Id type="SVK">RBA6201</Id>
+    <Name>
+     <Family>Mazúr</Family>
+     <Given>Milan</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2280</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">674</Id>
+    <Id type="SVK">RBA4301</Id>
+    <Name>
+     <Family>Šmelík</Family>
+     <Given>Ľudovít</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2412</Time>
+    <Position>5</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">464</Id>
+    <Id type="SVK">SPE6301</Id>
+    <Name>
+     <Family>Paulo</Family>
+     <Given>Miloš</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2472</Time>
+    <Position>6</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">20</Id>
+    <Id type="SVK">FBA5201</Id>
+    <Name>
+     <Family>Mikluš</Family>
+     <Given>Viktor</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2702</Time>
+    <Position>7</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">1432</Id>
+    <Id type="SVK">VBA5801</Id>
+    <Name>
+     <Family>Fekiač</Family>
+     <Given>Jozef</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2738</Time>
+    <Position>8</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">808</Id>
+    <Id type="SVK">FBA5101</Id>
+    <Name>
+     <Family>Grauzel</Family>
+     <Given>Vladimír</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2831</Time>
+    <Position>9</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2319</Id>
+    <Id type="SVK">FBA4101</Id>
+    <Name>
+     <Family>Nebeský</Family>
+     <Given>Ján</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3303</Time>
+    <Position>10</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">1</Id>
+    <Id type="SVK">FBA4501</Id>
+    <Name>
+     <Family>Baran</Family>
+     <Given>Dezider</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3906</Time>
+    <Position>11</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">157</Id>
+    <Id type="SVK">PEZ5001</Id>
+    <Name>
+     <Family>Féder</Family>
+     <Given>Medard</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>4577</Time>
+    <Position>12</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1588</Id>
+   <Name>W -10 </Name>
+   <ShortName>W -10 </ShortName>
+  </Class>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Volkova</Family>
+     <Given>Maja</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1063</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10001</Id>
+    <Id type="SVK">SKS0851</Id>
+    <Name>
+     <Family>Vorlíčková</Family>
+     <Given>Lucia</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1121</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10013</Id>
+    <Id type="SVK">SKS0952</Id>
+    <Name>
+     <Family>Brňáková</Family>
+     <Given>Diana</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1219</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1589</Id>
+   <Name>W -12 </Name>
+   <ShortName>W -12 </ShortName>
+  </Class>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2220</Id>
+    <Id type="SVK">SPE0651</Id>
+    <Name>
+     <Family>Kurucová</Family>
+     <Given>Petra</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1508</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2071</Id>
+    <Id type="SVK">SKS0751</Id>
+    <Name>
+     <Family>Baloghová</Family>
+     <Given>Zora</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1911</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10139</Id>
+    <Id type="SVK">SPE0752</Id>
+    <Name>
+     <Family>Fedorová</Family>
+     <Given>Eliška</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2322</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2263</Id>
+    <Id type="SVK">SPE0751</Id>
+    <Name>
+     <Family>Toporová</Family>
+     <Given>Kristína</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2951</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1590</Id>
+   <Name>W -14 </Name>
+   <ShortName>W -14 </ShortName>
+  </Class>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2400</Id>
+    <Id type="SVK">FBA0553</Id>
+    <Name>
+     <Family>Herna</Family>
+     <Given>Rebecca</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2474</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2254</Id>
+    <Id type="SVK">VBA0451</Id>
+    <Name>
+     <Family>Kováčová</Family>
+     <Given>Žofia</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2773</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2130</Id>
+    <Id type="SVK">SKS0551</Id>
+    <Name>
+     <Family>Vorlíčková</Family>
+     <Given>Martina</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2966</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10127</Id>
+    <Id type="SVK">SKS05AC</Id>
+    <Name>
+     <Family>Šutková</Family>
+     <Given>Anamária</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3015</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2361</Id>
+    <Id type="SVK">RBA0651</Id>
+    <Name>
+     <Family>Eliášová</Family>
+     <Given>Hana</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3049</Time>
+    <Position>5</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2117</Id>
+    <Id type="SVK">SKS0451</Id>
+    <Name>
+     <Family>Mravíková</Family>
+     <Given>Katarína</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3087</Time>
+    <Position>6</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10111</Id>
+    <Id type="SVK">SPE0553</Id>
+    <Name>
+     <Family>Komanová</Family>
+     <Given>Agáta</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3127</Time>
+    <Position>7</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10113</Id>
+    <Id type="SVK">SPE0554</Id>
+    <Name>
+     <Family>Halčínová</Family>
+     <Given>Bianka</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3180</Time>
+    <Position>8</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2053</Id>
+    <Id type="SVK">VBA0551</Id>
+    <Name>
+     <Family>Lago</Family>
+     <Given>Elena</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3293</Time>
+    <Position>9</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10131</Id>
+    <Id type="SVK">FBA17AE</Id>
+    <Name>
+     <Family>Patassiová</Family>
+     <Given>Patrícia</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>4281</Time>
+    <Position>10</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2399</Id>
+    <Id type="SVK">FBA0552</Id>
+    <Name>
+     <Family>Herna</Family>
+     <Given>Nicole</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>4311</Time>
+    <Position>11</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1591</Id>
+   <Name>W -16 </Name>
+   <ShortName>W -16 </ShortName>
+  </Class>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10054</Id>
+    <Id type="SVK">FBA0252</Id>
+    <Name>
+     <Family>Patassiová</Family>
+     <Given>Michaela</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1843</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2048</Id>
+    <Id type="SVK">PEZ0351</Id>
+    <Name>
+     <Family>Féderová</Family>
+     <Given>Zuzana</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3217</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1592</Id>
+   <Name>W -18 </Name>
+   <ShortName>W -18 </ShortName>
+  </Class>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2095</Id>
+    <Id type="SVK">VBA0251</Id>
+    <Name>
+     <Family>Navrátilová</Family>
+     <Given>Adéla</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2224</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2168</Id>
+    <Id type="SVK">SKS0151</Id>
+    <Name>
+     <Family>Jánošová</Family>
+     <Given>Veronika</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2405</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1593</Id>
+   <Name>W 19- </Name>
+   <ShortName>W 19- </ShortName>
+  </Class>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">1941</Id>
+    <Id type="SVK">RBA9952</Id>
+    <Name>
+     <Family>Miklušová</Family>
+     <Given>Tereza</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1859</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">1717</Id>
+    <Id type="SVK">SPE9451</Id>
+    <Name>
+     <Family>Pijáková</Family>
+     <Given>Barbora</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1915</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2245</Id>
+    <Id type="SVK">HBB9352</Id>
+    <Name>
+     <Family>Sedileková</Family>
+     <Given>Ela</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1958</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">1939</Id>
+    <Id type="SVK">RBA0252</Id>
+    <Name>
+     <Family>Miklušová</Family>
+     <Given>Tamara</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1986</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2213</Id>
+    <Id type="SVK">VZA9351</Id>
+    <Name>
+     <Family>Poštulková</Family>
+     <Given>Andrea</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2035</Time>
+    <Position>5</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">181</Id>
+    <Id type="SVK">SPE7451</Id>
+    <Name>
+     <Family>Fedorová</Family>
+     <Given>Katarína</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2045</Time>
+    <Position>6</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2386</Id>
+    <Id type="SVK">SKS9051</Id>
+    <Name>
+     <Family>Kotrlová</Family>
+     <Given>Katarína</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2060</Time>
+    <Position>7</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">1074</Id>
+    <Id type="SVK">SPE7552</Id>
+    <Name>
+     <Family>Toporová</Family>
+     <Given>Ľubica</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2259</Time>
+    <Position>8</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">1348</Id>
+    <Id type="SVK">VBA8454</Id>
+    <Name>
+     <Family>Ančicová</Family>
+     <Given>Stanislava</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2266</Time>
+    <Position>9</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Botíková</Family>
+     <Given>Daniela</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2276</Time>
+    <Position>10</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">1069</Id>
+    <Id type="SVK">SPE8551</Id>
+    <Name>
+     <Family>Vachová</Family>
+     <Given>Veronika</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2303</Time>
+    <Position>11</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">1940</Id>
+    <Id type="SVK">RBA0251</Id>
+    <Name>
+     <Family>Šmelíková</Family>
+     <Given>Dorota</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2329</Time>
+    <Position>12</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2322</Id>
+    <Id type="SVK">FBA8253</Id>
+    <Name>
+     <Family>Sýkorová</Family>
+     <Given>Katarína</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2417</Time>
+    <Position>13</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">1942</Id>
+    <Id type="SVK">RBA7351</Id>
+    <Name>
+     <Family>Miklušová</Family>
+     <Given>Dagmar</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2420</Time>
+    <Position>14</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2110</Id>
+    <Id type="SVK">SKS7751</Id>
+    <Name>
+     <Family>Urbanová</Family>
+     <Given>Monika</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2492</Time>
+    <Position>15</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">1012</Id>
+    <Id type="SVK">VBA6951</Id>
+    <Name>
+     <Family>Šmelíková</Family>
+     <Given>Barbora</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3012</Time>
+    <Position>16</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10146</Id>
+    <Id type="SVK">SPE83AA</Id>
+    <Name>
+     <Family>Ježíková</Family>
+     <Given>Ľubomíra</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3189</Time>
+    <Position>17</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10141</Id>
+    <Id type="SVK">SPE8253</Id>
+    <Name>
+     <Family>Zedníčková</Family>
+     <Given>Michaela</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3217</Time>
+    <Position>18</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1594</Id>
+   <Name>W 40- </Name>
+   <ShortName>W 40- </ShortName>
+  </Class>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">673</Id>
+    <Id type="SVK">FBA6951</Id>
+    <Name>
+     <Family>Šmelíková</Family>
+     <Given>Hana</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2272</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10015</Id>
+    <Id type="SVK">SKS7752</Id>
+    <Name>
+     <Family>Brňáková</Family>
+     <Given>Martina</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2481</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">280</Id>
+    <Id type="SVK">RBA7856</Id>
+    <Name>
+     <Family>Lanátorová</Family>
+     <Given>Katarína</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2558</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2131</Id>
+    <Id type="SVK">SKS7651</Id>
+    <Name>
+     <Family>Vorlíčková</Family>
+     <Given>Barbora</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2605</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">1309</Id>
+    <Id type="SVK">RBA6551</Id>
+    <Name>
+     <Family>Mazúrová</Family>
+     <Given>Soňa</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3029</Time>
+    <Position>5</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2376</Id>
+    <Id type="SVK">FBA7853</Id>
+    <Name>
+     <Family>Komanová</Family>
+     <Given>Kristína</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3262</Time>
+    <Position>6</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2219</Id>
+    <Id type="SVK">SPE7151</Id>
+    <Name>
+     <Family>Kurucová</Family>
+     <Given>Eva</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3295</Time>
+    <Position>7</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Máčajová</Family>
+     <Given>Edita</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3744</Time>
+    <Position>8</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10128</Id>
+    <Id type="SVK">SKS77AB</Id>
+    <Name>
+     <Family>Šutková</Family>
+     <Given>Ľubica</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>4014</Time>
+    <Position>9</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2120</Id>
+    <Id type="SVK">SKS6551</Id>
+    <Name>
+     <Family>Baloghová</Family>
+     <Given>Hana</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>4242</Time>
+    <Position>10</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1595</Id>
+   <Name>W 55- </Name>
+   <ShortName>W 55- </ShortName>
+  </Class>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">17</Id>
+    <Id type="SVK">SPE6251</Id>
+    <Name>
+     <Family>Pijáková</Family>
+     <Given>Iveta</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1944</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2112</Id>
+    <Id type="SVK">RBA6051</Id>
+    <Name>
+     <Family>Jánošková</Family>
+     <Given>Taťjana</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2330</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2076</Id>
+    <Id type="SVK">SPE5851</Id>
+    <Name>
+     <Family>Karovic</Family>
+     <Given>Maya</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2500</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">87</Id>
+    <Id type="SVK">RBA5651</Id>
+    <Name>
+     <Family>Vávrová</Family>
+     <Given>Beata</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2562</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">156</Id>
+    <Id type="SVK">SPE4851</Id>
+    <Name>
+     <Family>Kavecká</Family>
+     <Given>Soňa</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3098</Time>
+    <Position>5</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">7</Id>
+    <Id type="SVK">FBA5551</Id>
+    <Name>
+     <Family>Daříčková</Family>
+     <Given>Katarína</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3220</Time>
+    <Position>6</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">1615</Id>
+    <Id type="SVK">VBA5851</Id>
+    <Name>
+     <Family>Fekiačová</Family>
+     <Given>Mária</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3332</Time>
+    <Position>7</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">161</Id>
+    <Id type="SVK">SPE5351</Id>
+    <Name>
+     <Family>Brzová</Family>
+     <Given>Marta</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3430</Time>
+    <Position>8</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">158</Id>
+    <Id type="SVK">SPE5051</Id>
+    <Name>
+     <Family>Fraňová</Family>
+     <Given>Marie</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3549</Time>
+    <Position>9</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">1062</Id>
+    <Id type="SVK">VBA4751</Id>
+    <Name>
+     <Family>Králová</Family>
+     <Given>Eva</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>4586</Time>
+    <Position>10</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1596</Id>
+   <Name>Open </Name>
+   <ShortName>Open </ShortName>
+  </Class>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Babiaková</Family>
+     <Given>Monika</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1816</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Charvát</Family>
+     <Given>Tomáš</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2104</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2405</Id>
+    <Id type="SVK">FBA7103</Id>
+    <Name>
+     <Family>Novosad</Family>
+     <Given>Tibor</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2178</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Vaňo</Family>
+     <Given>Marek</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2233</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10137</Id>
+    <Id type="SVK">SPE7653</Id>
+    <Name>
+     <Family>Fintorová</Family>
+     <Given>Monika</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2296</Time>
+    <Position>5</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Illek</Family>
+     <Given>Ľubor</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2539</Time>
+    <Position>6</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Mertan</Family>
+     <Given>Jakub</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2612</Time>
+    <Position>7</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2388</Id>
+    <Id type="SVK">FBA7802</Id>
+    <Name>
+     <Family>Németh</Family>
+     <Given>Martin</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2619</Time>
+    <Position>8</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Gulai</Family>
+     <Given>Imrich</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2755</Time>
+    <Position>9</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Vrábeľ</Family>
+     <Given>René</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2809</Time>
+    <Position>10</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Mališ</Family>
+     <Given>Marián</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2811</Time>
+    <Position>11</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10135</Id>
+    <Id type="SVK">SPE7352</Id>
+    <Name>
+     <Family>Kutišová</Family>
+     <Given>Silvia</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2889</Time>
+    <Position>12</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2377</Id>
+    <Id type="SVK">FBA7905</Id>
+    <Name>
+     <Family>Koman</Family>
+     <Given>Marek</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2909</Time>
+    <Position>13</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Franců</Family>
+     <Given>Dušan</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2941</Time>
+    <Position>14</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10102</Id>
+    <Id type="SVK">SKS80AB</Id>
+    <Name>
+     <Family>Grossová</Family>
+     <Given>Barbora</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2966</Time>
+    <Position>15</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Ondra</Family>
+     <Given>František</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2994</Time>
+    <Position>16</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Zenis</Family>
+     <Given>Matej</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3035</Time>
+    <Position>17</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10053</Id>
+    <Id type="SVK">FBA7351</Id>
+    <Name>
+     <Family>Patassiová</Family>
+     <Given>Marianna</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3241</Time>
+    <Position>18</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2398</Id>
+    <Id type="SVK">FBA7253</Id>
+    <Name>
+     <Family>Herna</Family>
+     <Given>Ida</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3456</Time>
+    <Position>19</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Pohronská</Family>
+     <Given>Žofia</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>4035</Time>
+    <Position>20</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1597</Id>
+   <Name>N </Name>
+   <ShortName>N </ShortName>
+  </Class>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">1678</Id>
+    <Id type="SVK">SPE7851</Id>
+    <Name>
+     <Family>Lupová</Family>
+     <Given>Zuzana</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1148</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Herndlhofer</Family>
+     <Given>Jana</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2212</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Gulai</Family>
+     <Given>Katarína</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2301</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Mališ</Family>
+     <Given>Andrej</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2567</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Havlíková</Family>
+     <Given>Jana</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>0</Time>
+    <Status>MissingPunch</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+ <ClassResult>
+  <Class>
+   <Id type="ISSZOS">1598</Id>
+   <Name>RD </Name>
+   <ShortName>RD </ShortName>
+  </Class>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Pavelekova</Family>
+     <Given>Kristina</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1059</Time>
+    <Position>1</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2389</Id>
+    <Id type="SVK">FBA1005</Id>
+    <Name>
+     <Family>Németh</Family>
+     <Given>Teo Martin</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1062</Time>
+    <Position>2</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Grič</Family>
+     <Given>Jakub</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1170</Time>
+    <Position>3</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Ujvari</Family>
+     <Given>Kristof</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1227</Time>
+    <Position>4</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Ujvari</Family>
+     <Given>Matilda</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1263</Time>
+    <Position>5</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Máčajová</Family>
+     <Given>Zina</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1322</Time>
+    <Position>6</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Hrosovska</Family>
+     <Given>Lenka</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1487</Time>
+    <Position>7</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">10126</Id>
+    <Id type="SVK">SKS09AE</Id>
+    <Name>
+     <Family>Šutka</Family>
+     <Given>Alex Luis</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1499</Time>
+    <Position>8</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10087</Id>
+    <Id type="SVK">RBA1051</Id>
+    <Name>
+     <Family>Lanátorová</Family>
+     <Given>Lucia</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1786</Time>
+    <Position>9</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK">VBA0601</Id>
+    <Name>
+     <Family>Trgiňa</Family>
+     <Given>Ondrej</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1808</Time>
+    <Position>10</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">2116</Id>
+    <Id type="SVK">SKS0752</Id>
+    <Name>
+     <Family>Mravíková</Family>
+     <Given>Teodorka</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1841</Time>
+    <Position>11</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Trgiňová</Family>
+     <Given>Karolína</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1934</Time>
+    <Position>12</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10123</Id>
+    <Id type="SVK">SPE1051</Id>
+    <Name>
+     <Family>Bobovská</Family>
+     <Given>Veronika</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>1958</Time>
+    <Position>13</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Herndlhofer</Family>
+     <Given>Oliver</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2339</Time>
+    <Position>14</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Šóš</Family>
+     <Given>Miki</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2483</Time>
+    <Position>15</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">2201</Id>
+    <Id type="SVK">FBA0901</Id>
+    <Name>
+     <Family>Janota</Family>
+     <Given>Timotej</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2606</Time>
+    <Position>16</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Zedníček</Family>
+     <Given>Matúš</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2649</Time>
+    <Position>17</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="M">
+    <Id type="ISSZOS">10100</Id>
+    <Id type="SVK">SKS17AC</Id>
+    <Name>
+     <Family>Jánoš</Family>
+     <Given>Martin Marian</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2656</Time>
+    <Position>18</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Ježík</Family>
+     <Given>Viktor</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>2709</Time>
+    <Position>19</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person sex="F">
+    <Id type="ISSZOS">10124</Id>
+    <Id type="SVK">SPE1351</Id>
+    <Name>
+     <Family>Bobovská</Family>
+     <Given>Nela</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3420</Time>
+    <Position>20</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Šóšová</Family>
+     <Given>Ronja</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>3559</Time>
+    <Position>21</Position>
+    <Status>OK</Status>
+   </Result>
+  </PersonResult>
+  <PersonResult>
+   <Person>
+    <Id type="SVK"></Id>
+    <Name>
+     <Family>Glézl</Family>
+     <Given>Filip</Given>
+    </Name>
+   </Person>
+   <Result>
+    <Time>0</Time>
+    <Status>MissingPunch</Status>
+   </Result>
+  </PersonResult>
+ </ClassResult>
+</ResultList>
