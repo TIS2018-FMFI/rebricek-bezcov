@@ -96,9 +96,9 @@ public class HtmlResultGenerator {
             s.append("\t\t\t\t<td></td>\n");
         }
         String color = "green";
-        if(categoryName.charAt(0) == 'M'){
+        if(categoryName.length() > 1 && categoryName.charAt(0) == 'M'){
             color = "blue";
-        }else if(categoryName.charAt(0) =='W'){
+        }else if(categoryName.length() > 1 && categoryName.charAt(0) =='W'){
             color = "pink";
         }
         return categoryTemplate
@@ -126,9 +126,9 @@ public class HtmlResultGenerator {
         }
         String change = getChange(runner, categoryName, order);
         String color = "blueText";
-        if(change.charAt(0) == '↓'){
+        if(change.length() > 1 && change.charAt(0) == '↓'){
             color = "redText";
-        }else if(change.charAt(0) == '↑'){
+        }else if(change.length() > 1 && change.charAt(0) == '↑'){
             color = "greenText";
         }
         return runnerTemplate
