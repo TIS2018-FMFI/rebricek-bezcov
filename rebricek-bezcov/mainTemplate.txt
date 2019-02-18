@@ -28,7 +28,7 @@
 				<td></td> 
 				<td></td> 
 				<td></td> 
-@nazvyKol				<td class = "rotate"><div><span><b>Spolu</b></span></div></td>
+@poradieKol				<td><b>Spolu</b></td>
 			</tr>
 			<tr>
 				<td></td> 
@@ -36,14 +36,14 @@
 				<td></td>
 				<td></td> 
 				<td></td> 
-@poradieKol				<td></td>
+@datumyKol				<td></td>
 			</tr>
 			<tr>
 				<td></td> 
 				<td></td> <td></td>
 				<td></td> 
 				<td></td> 
-@datumyKol				<td></td> 
+@nazvyKol				<td></td> 
 			</tr></thead>
 @vysledky	</body>
 </html>
