@@ -22,13 +22,13 @@
 		<nav><table><tr>
 @navigacia		</tr></table></nav>
 		<table>
-			<thead><tr>
+			<thead><tr class = "noBorder">
 				<td></td> 
 				<td></td> 
 				<td></td> 
 				<td></td> 
 				<td></td> 
-@poradieKol				<td></td>
+@nazvyKol				<td class = "rotate"><div><span><b>Spolu</b></span></div></td>
 			</tr>
 			<tr>
 				<td></td> 
@@ -36,14 +36,14 @@
 				<td></td>
 				<td></td> 
 				<td></td> 
-@datumyKol				<td></td>
+@poradieKol				<td></td>
 			</tr>
 			<tr>
 				<td></td> 
-				<td><div><b>Zmena oproti predošlému kolu</b></div></td> <td></td>
+				<td></td> <td></td>
 				<td></td> 
 				<td></td> 
-@nazvyKol				<td><b>Spolu</b></td> 
+@datumyKol				<td></td> 
 			</tr></thead>
 @vysledky	</body>
 </html>
