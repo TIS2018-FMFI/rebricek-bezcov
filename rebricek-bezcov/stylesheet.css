@@ -2,6 +2,8 @@
 body{
 	font-family: "Calibry", sans-serif;
 	font-size: 12px;
+	width: 100%;
+	text-decoration: none;
 }
 #v1{
 	font-size: 17px;
@@ -28,19 +30,92 @@ table{
     border-collapse: collapse;
 	margin-top: 10px;
 	font-size: 13px;
-	float: middle;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 th, td{
 	border: 1px solid #000000;
 	text-align: center;
-	width: 80px;
 }
 
-.categ{
-	background-color: #CCCCCC;
+.noDisplay td{
+	font-size: 15px;
+	border: 1px solid #FFFFFF;
+	text-align: center;
+}
+
+td.width1{
+	width: 25px;
+}
+
+td.width2{
+	width: 70px;
+}
+
+td.width3{
+	width: 60px;
+}
+
+td.width4{
+	width: 65px;
+}
+
+td.width5{
+	width: 65px;
+}
+
+.blue{
+	background-color: #a2c1f9;
+}
+
+.pink{
+	background-color: #ebc9fc;
+}
+
+.green{
+	background-color: #ddffaf;
+}
+
+.blueText{
+	color: blue;
+	font-size: 14;
+}
+
+.redText{
+	color: red;
+	font-size: 14;
+}
+
+.greenText{
+	color: green;
+	font-size: 14px;
 }
 
 td.left {
 	text-align: left;
+}
+
+td.rotate {
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+	height: 200px;
+	white-space: nowrap;
+}
+
+td.rotate div {
+  transform: translate(48px, 69px) rotate(315deg);
+  width: 65px;
+}
+
+td.rotate div  span {
+  border-bottom: 1px solid #000000;
+  padding: 5px 20px;
+}
+
+.noBorder td{
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
 }
