@@ -46,7 +46,7 @@ th, td{
 }
 
 td.width1{
-	width: 25px;
+	width: 20px;
 }
 
 td.width2{
@@ -58,11 +58,11 @@ td.width3{
 }
 
 td.width4{
-	width: 65px;
+	width: 45px;
 }
 
 td.width5{
-	width: 65px;
+	width: 70px;
 }
 
 .blue{
@@ -96,19 +96,19 @@ td.left {
 	text-align: left;
 }
 
-td.rotate {
+/*td.rotate {
 	border-left: 1px solid #FFFFFF;
 	border-right: 1px solid #FFFFFF;
 	border-top: 1px solid #FFFFFF;
 	height: 200px;
 	white-space: nowrap;
-}
+}*/
 
 td.rotate div {
-  transform: translate(48px, 69px) rotate(315deg);
-  width: 65px;
+  /*transform: translate(48px, 69px) rotate(315deg);*/
+  width: 70px;
 }
-
+/*
 td.rotate div  span {
   border-bottom: 1px solid #000000;
   padding: 5px 20px;
@@ -118,4 +118,4 @@ td.rotate div  span {
 	border-left: 1px solid #FFFFFF;
 	border-right: 1px solid #FFFFFF;
 	border-top: 1px solid #FFFFFF;
-}
+}*/
