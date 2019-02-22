@@ -48,7 +48,7 @@ public class TotalResults {
 				if(notCountingCategoriesList.contains( cd.getName().trim() ))
 					continue;
 				for(PersonResult pr : cr.getPersonResult()) {
-					System.out.println("Priradujem hraca..." + pr.getPerson().getName().getFamily());
+					System.out.println("The player is assigning....." + pr.getPerson().getName().getFamily());
 					assignRunner(cd, pr, roundNumber);
 				}
 			}
@@ -57,7 +57,7 @@ public class TotalResults {
 			System.out.println("Categories: " + entry);
 		}
 		for (Map<String, RunnerOverall> entry : dictionary.values()) {
-			System.out.println("Stav po kole:");
+			System.out.println("Results after next round:");
 			for(RunnerOverall runnerOverall : entry.values()) {
 				runnerOverall.setPoints(runnerOverall.sumOfPoints());
 				while(runnerOverall.getRounds().size() < events.size()) {
@@ -66,14 +66,6 @@ public class TotalResults {
 				System.out.println(runnerOverall.identificator + "......." + runnerOverall.rounds.toString());
 			}
 		}
-		System.out.println("KONTROLNY VYPIS PRIAMO PRED PREDANIM HTML GENERUJUCEMU MODULU");
-		for (Map<String, RunnerOverall> entry : dictionary.values()) {
-			System.out.println("dalsia kategoria");
-			for(RunnerOverall runnerOverall : entry.values()) {
-				System.out.println(runnerOverall.identificator + "......." + runnerOverall.rounds.toString());
-			}
-		}
-		System.out.println("KONIEC KONTROLNEHO VYPISU PRED PREDANIM HTML GENERUJUCEMU MODULU");
 		new HtmlResultGenerator(dictionary, events, dates);
 	}
 
