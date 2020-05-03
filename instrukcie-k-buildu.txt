@@ -1,0 +1,24 @@
+prilohy k tomuto textaku:
+	- build.xml (ant build task script)
+	- MANIFEST.MF (manifest k jarku, hlavne pre definiciu main classy)
+
+prerekvizity (navod nizsie je priamo aplikovatelny na windows os):
+	- (java) JDK, JRE 1.8+
+	- Ant (https://ant.apache.org/bindownload.cgi)
+		- vytvorit novu Enviroment Variable ANT_HOME = "directory stiahnuteho zipka"
+	- zmenit defaultny Ant encoding z cp1252 na utf8 (zdrojaky obsahuju znaky nekodovatelne v cp1252). 
+		- Toto sa da vytvorenim novej Enviroment Variable ANT_OPS s hodnotou "-Dfile.encoding=utf-8"
+
+navod:
+	- umiestnit subory build.xml a MANIFEST.md na uroven o 1 vyssie nad cielenou directory jarka.
+		- (je to rovnaka directory, v ktorej boli umiestnene napr. subory instrukcie-k-spusteniu alebo instrukcie-ku-konfiguracnemu-suboru)
+		- teda z tejto directory vidim na priecinok "rebricek-bezcov", ktory obsahuje "src/", "TestsInputFiles/", _Template.txt a podobne
+	- spustit:
+		ant -f build.xml
+		(spusti ant build task, skompiluje zdrojaky do bin/ directory)
+	- spustit:
+		jar -cvfm rebricek-bezcov/rebricek-bezcov.jar MANIFEST.MF -C bin/ .
+		(vytvori jarko v directory rebricek-bezcov (to je ta, odkial ju treba spustat) s pouzitim MANIFEST.MF zo zdrojakov v bin/)
+	
+	- jarko je nasledne spustitelne:
+		java -jar rebricek-bezcov/rebricek-bezcov.jar
